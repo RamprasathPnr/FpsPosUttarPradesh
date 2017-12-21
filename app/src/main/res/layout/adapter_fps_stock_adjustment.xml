@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:padding="11.25dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center|left">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvQuantityUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvProductName"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tvCurrentStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeAdjustQuantity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtAdjustQuantity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBaseline="@+id/relativeAdjustQuantity"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/adjustmentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+        <!-- android:background="@drawable/adjustment_stock_spinner"-->
+    </RelativeLayout>
+
+
+</LinearLayout>

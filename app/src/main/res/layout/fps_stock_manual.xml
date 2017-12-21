@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/manualInStockGodownListRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/godownLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvgodownLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/selectGodown"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ff0000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tvAutoCompletegodown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/enterFirstLetterOfGodown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_below="@+id/godownLinearLayout"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvChallanId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/challanNo"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ff0000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtChallanId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/enterChellanNo"
+                        android:inputType="number"
+                        android:maxLength="8" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fpsInvardLinearLayoutPQRQ"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/manualInStockGodownListRelativeLayout"
+                android:layout_marginTop="20dp"
+                android:background="#07C8ff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fpsInvardDetailProductLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/fpsInvardDetailProductName"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fpsInvardDetailQuantityLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/currentStock"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fpsInvardDetailReceivedQuantityLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fpsInWardDetailReceivedQuantity"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/listView_fps_stock_inward_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fpsInvardLinearLayoutPQRQ"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listView_fps_stock_inward_detail"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:textAllCaps="false"
+
+                    android:id="@+id/btnfpsIDSubmit"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fpsIDcheckBoxStatus"
+                    android:background="@drawable/button_login"
+                    android:onClick="onSubmit"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:textAllCaps="false"
+
+                    android:id="@+id/btnfpsIDCancel"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fpsIDcheckBoxStatus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btnfpsIDSubmit"
+                    android:background="@drawable/button_login"
+                    android:onClick="onCancel"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="60dp"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:background="#0000ff"
+         android:id="@+id/relativeLayout2">
+
+         <TextView
+             android:id="@+id/login_bottom"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="@string/omneagate"
+             android:textColor="#ffffff"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+     </RelativeLayout>-->
+
+</RelativeLayout>

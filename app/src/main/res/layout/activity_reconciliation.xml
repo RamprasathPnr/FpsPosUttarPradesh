@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/fpsInvardlinearLayoutTitle"
+        android:layout_below="@id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#777777"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardchellanIdLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="#"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/commodityNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/commodity_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/unitLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/unit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/stockLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/current_stock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_below="@+id/fpsInvardlinearLayoutTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1">
+        <com.omneagate.Util.PullToRefresh.LoadMoreListView
+            android:id="@+id/listView_reconciliation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#777777"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false" />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/progress_bar_color" />
+        <RelativeLayout
+            android:id="@+id/linearLayoutNoRecords"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tvNoRecords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_records"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/terms"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/listLayout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:button="@null"
+        android:background="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <TextView
+        android:id="@+id/reconciliationTerms"
+        android:layout_marginLeft="2dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/listLayout"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/terms"
+        android:text="@string/reconciliation_terms"
+        android:textColor="#000000"
+        android:textSize="@dimen/table_title"/>
+
+
+
+    <Button
+        android:id="@+id/reconciliationButton"
+        android:enabled="false"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/listLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/reconciliation"
+        android:background="@color/lightgray"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="@dimen/table_title"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/listLayout"
+        android:layout_toLeftOf="@id/reconciliationButton"
+        android:layout_marginRight="5dp"
+        android:text="@string/close"
+        android:background="@drawable/red_bg"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="@dimen/table_title"/>
+
+
+    <include
+        android:id="@+id/bottomScreen"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

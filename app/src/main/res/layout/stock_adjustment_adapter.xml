@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tvSerialNo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tvDeliveryChellanId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/godownOutwardRefNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tvOutwardDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tvGodownName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tvLapsedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="16sp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/btnStatus"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+
+        <RelativeLayout
+            android:id="@+id/acknowledgeRelativeLayout"
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/fpsAdjustmentAcknowledge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:checked="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/custom_checkbox" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#D4D4D4" />
+</LinearLayout>

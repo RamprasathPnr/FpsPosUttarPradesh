@@ -1,0 +1,429 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:id="@+id/bill_layout_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_edit_text_transaction"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <com.omneagate.Util.SquareLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#777777">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_green_card" />
+                        </com.omneagate.Util.SquareLayout>
+
+                        <!--<LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="fill_parent">
+
+                            <com.neopixl.pixlui.components.edittext.EditText
+                                android:id="@+id/firstText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="#00000000"
+                                android:digits="0123456789"
+                                android:ems="2"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:maxLength="2"
+                                android:nextFocusDown="@+id/secondText"
+                                android:singleLine="true"
+                                android:textColor="#777777"
+                                android:textSize="33dp"
+                                pixlui:clearclipboardcontent="true"
+                                pixlui:copyandpaste="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="fill_parent"
+                            android:background="#777777" />
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="fill_parent">
+
+                            <com.neopixl.pixlui.components.edittext.EditText
+                                android:id="@+id/secondText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="#00000000"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:ems="1"
+                                android:gravity="center"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="1"
+                                android:nextFocusDown="@+id/thirdText"
+                                android:singleLine="true"
+                                android:textColor="#777777"
+                                android:textSize="33dp"
+                                pixlui:clearclipboardcontent="true"
+                                pixlui:copyandpaste="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="fill_parent"
+                            android:background="#777777" />-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:paddingLeft="10dp">
+
+                            <com.neopixl.pixlui.components.edittext.EditText
+                                android:id="@+id/thirdText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:hint="@string/ration_card_number1"
+                                android:background="#00000000"
+                                android:digits="0123456789"
+                                android:ems="7"
+                                android:gravity="center_vertical"
+                                android:inputType="numberDecimal"
+                                android:maxLength="12"
+                                android:singleLine="true"
+                                android:textColor="#777777"
+                                android:textSize="25dp"
+                                pixlui:clearclipboardcontent="true"
+                                pixlui:copyandpaste="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_edit_text_transaction"
+                    android:paddingRight="10dp">
+
+                    <com.omneagate.Util.SquareLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#777777">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_green_mob" />
+                    </com.omneagate.Util.SquareLayout>
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/transparent"
+                        android:digits="0123456789"
+                        android:hint="@string/mobile_no"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="80dp"
+                        android:singleLine="true"
+                        android:textColor="#777777"
+                        android:textSize="25dp"
+                        pixlui:clearclipboardcontent="true"
+                        pixlui:copyandpaste="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_edit_text_transaction"
+                    android:paddingRight="10dp">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/dateOfPurchase"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/transparent"
+                        android:hint="@string/billDetailAmountLabel"
+                        android:paddingLeft="80dp"
+                        android:textColor="#777777"
+                        android:textSize="25dp"
+                        pixlui:clearclipboardcontent="true"
+                        pixlui:copyandpaste="false" />
+
+                    <com.omneagate.Util.SquareLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#777777"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/icon_green_cal" />
+                    </com.omneagate.Util.SquareLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_edit_text_transaction"
+                    android:paddingRight="10dp">
+
+                    <com.neopixl.pixlui.components.edittext.EditText
+                        android:id="@+id/aRegNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/transparent"
+                        android:digits="0123456789"
+                        android:hint="@string/aRegisterNo"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:paddingLeft="80dp"
+                        android:singleLine="true"
+                        android:textColor="#777777"
+                        android:textSize="25dp"
+                        pixlui:clearclipboardcontent="true"
+                        pixlui:copyandpaste="false" />
+
+                    <com.omneagate.Util.SquareLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#777777"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/icon_trns_areg" />
+                    </com.omneagate.Util.SquareLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:textAllCaps="false"
+
+                    android:id="@+id/bill_search"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="#029555"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/circle_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_background_bill">
+
+                <TextView
+                    android:id="@+id/or_string"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Or"
+                    android:textColor="#a7a6a6"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/circle_back"
+                android:background="#dddddd" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/circle_back"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/scan_qr_search"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background="#cd027f">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_scan_qr" />
+
+                <TextView
+                    android:id="@+id/scan_qr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:text="Scan QR Code"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/key_board_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/edit_card_registartion">
+
+        <RelativeLayout
+            android:id="@+id/keyboardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/customkeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:background="@color/transparent"
+                android:keyBackground="@color/keyboard_key"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/keyboardAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/customkeyboardAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:background="@color/transparent"
+                android:keyBackground="@color/keyboard_key"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

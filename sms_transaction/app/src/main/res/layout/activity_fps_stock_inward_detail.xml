@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/relativeLayoutfpsDetail">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/linearLayoutChellanId">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:id="@+id/tvFIDChellanIdLabel"
+                android:text="@string/FIDChellanIdLabel"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFIDChellanId"
+                android:textSize="27dp"
+
+                android:layout_alignParentLeft="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutAckDate"
+            android:layout_below="@+id/linearLayoutChellanId">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFIDAckDateLabel"
+                android:text="@string/FIDAckDateLabel"
+                android:textSize="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvFIDChellanId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFIDAckDate"
+                android:textSize="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvFIDChellanId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutAckDate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFIDBatchNoLabel"
+                android:text="@string/FIDBatchNoLabel"
+                android:textSize="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvFIDChellanId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:id="@+id/tvFIDFIDBatchNo"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvFIDChellanId" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#07C8ff"
+        android:layout_height="80dp"
+        android:layout_below="@+id/relativeLayoutfpsDetail"
+        android:id="@+id/fpsInvardLinearLayoutPQRQ">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/fpsInvardDetailProductLabel"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/fpsInvardDetailProductName"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/fpsInvardDetailQuantityLabel"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="@string/fpsInvardDetailQuantity"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fpsInvardDetailReceivedQuantityLabel"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/fpsInWardDetailReceivedQuantity" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/listView_fps_stock_inward_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/fpsInvardLinearLayoutPQRQ">
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AcknowledgementStatus"
+        android:id="@+id/fpsIDcheckBoxStatus"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/listView_fps_stock_inward_detail" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/fpsIDcheckBoxStatus"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfpsIDSubmit"
+            android:background="@drawable/button_login"
+            android:onClick="onSubmit"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:layout_alignLeft="@+id/fpsIDcheckBoxStatus" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfpsIDCancel"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_login"
+            android:layout_below="@+id/fpsIDcheckBoxStatus"
+            android:onClick="onCancel"
+            android:layout_toRightOf="@+id/btnfpsIDSubmit" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#0000ff"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/login_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/com.omneagate"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

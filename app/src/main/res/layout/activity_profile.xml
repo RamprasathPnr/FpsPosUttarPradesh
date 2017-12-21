@@ -1,0 +1,323 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp">
+
+                <TextView
+                    android:id="@+id/fps_code_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="FPS Code"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/fps_code_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp">
+
+                <TextView
+                    android:id="@+id/store_type_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Store Type"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/store_type_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/agency_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Agency Name"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/agency_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp">
+
+                <TextView
+                    android:id="@+id/location_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Location"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/location_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp">
+
+                <TextView
+                    android:id="@+id/morning_session_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Morning Session "
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/morning_session_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_background"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/after_noon_session_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#025584"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Afternoon Session"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/after_noon_session_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:textColor="#444444"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/sim_id_label"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="#025584"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Sim Id"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/sim_id_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:textColor="#444444"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:textAllCaps="false"
+
+                    android:id="@+id/button_cancel"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="#1097db"
+                    android:text="Close"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

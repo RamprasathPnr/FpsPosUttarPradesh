@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:onClick="logMeOut"
+        android:id="@+id/button_logout"
+        android:layout_marginTop="100dp"
+        android:paddingRight="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_logout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scanQR"
+        android:id="@+id/button_entitlement"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/button_login"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scanWithOutOTP"
+        android:id="@+id/otpButton"
+        android:layout_below="@+id/button_entitlement"
+        android:background="@drawable/button_login"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mobileOTP"
+        android:id="@+id/otpMobile"
+        android:layout_below="@+id/otpButton"
+        android:background="@drawable/button_login"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/beneficiaryData"
+        android:id="@+id/beneficiaryActivation"
+        android:layout_below="@+id/otpMobile"
+        android:background="@drawable/button_login"
+        android:textSize="30sp"
+        android:onClick="beneficiaryCardUpdate"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Card Registration"
+        android:id="@+id/beneficiaryRegistration"
+        android:layout_below="@+id/beneficiaryActivation"
+        android:background="@drawable/button_login"
+        android:textSize="30sp"
+        android:onClick="beneficiaryCardRegistration"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#0000ff"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/login_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/com.omneagate"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

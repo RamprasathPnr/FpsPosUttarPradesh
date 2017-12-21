@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proxyLayoutMaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/timeLayout"
+        layout="@layout/tg_user_top_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topLayout" />
+
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/fps_is"
+        android:layout_below="@+id/timeLayout"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#D6E5EF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="@string/AADHAAR_CARD" />
+
+        <TextView
+            android:id="@+id/aadhaar_card_number_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+
+
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/timeLayout"
+        android:id="@+id/fps_is"
+        android:background="#D6E3EF">
+
+        <TextView
+            android:id="@+id/ration_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/RATION_CARD_NO" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/holdername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fps_is"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/benefProxyListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/holdername"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/benefListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:padding="10dp"
+                android:src="@drawable/tg_ten_finger_img" />
+
+            <ImageView
+                android:id="@+id/leftThumb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="25dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/leftIndex"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/leftMiddle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="135dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/leftRing"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="175dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/leftSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/rightThumb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="422dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/rightIndex"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="377dp"
+
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/rightMiddle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="320dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/rightRing"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="280dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/rightSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="242dp"
+                android:layout_marginTop="35dp"
+                android:padding="10dp"
+                android:src="@drawable/green_tick_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/proxyListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="0.5dp">
+            <!--<TextView
+                android:id="@+id/handHeadingTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/grey"
+                android:text="Select Hand"/>
+            <RelativeLayout
+                android:id="@+id/handSpinnerLayout"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.omneagate.Util.NoDefaultSpinner
+                    android:id="@+id/handSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" />
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:src="@drawable/arrow_brown" />
+                </RelativeLayout>
+            </RelativeLayout>-->
+            <TextView
+                android:id="@+id/fingerHeadingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/choose_finger"
+                android:textColor="@color/grey"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:id="@+id/fingerSpinnerLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_margin="15dp">
+
+                <com.omneagate.Util.NoDefaultSpinner
+                    android:id="@+id/fingerSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_background" />
+
+                <RelativeLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:src="@drawable/arrow_brown" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/bottom_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_background"
+                    android:text="@string/cancelCaps"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_background"
+                    android:text="@string/scan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

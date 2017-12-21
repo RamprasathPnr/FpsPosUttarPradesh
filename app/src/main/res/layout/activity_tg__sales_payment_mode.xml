@@ -1,0 +1,526 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proxyLayoutMaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+
+
+    <LinearLayout
+        android:id="@+id/benefBfdLayout"
+        android:layout_below="@id/topLayout"
+        android:layout_above="@id/bottom_layout"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/bfdLeftLayout"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/benefNameLayout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/benefNameTv"
+                    android:layout_marginLeft="5dp"
+                    android:text="RATION CARD NUMBER - 365364447598"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="normal"
+                    android:singleLine="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_layout"
+
+                android:layout_below="@+id/fpsid"
+                android:layout_marginBottom="27dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/fpsmemberlinearLayoutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:orientation="horizontal">
+                    <!--changed the width to 180 pl conform it exact value is 70dp-->
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="57dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/fpsmembersname"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="Commodity List"
+                            android:textColor="@color/white"
+                            android:textSize="23dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/fpsmemberuid"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:gravity="center"
+                            android:text="Qty Requested"
+                            android:textColor="@color/white"
+                            android:textSize="23dp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sum1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/fpsmemberlinearLayoutTitle"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1">
+
+                    <com.omneagate.Util.PullToRefresh.LoadMoreListView
+                        android:id="@+id/listView_fps_member_detail"
+                        style="@style/scrollbar_shape_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#777777"
+                        android:dividerHeight="0dp"
+                        android:fadeScrollbars="false" />
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayoutNoRecords"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/tvNoRecords"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/no_records"
+                            android:textColor="#000000"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bfdRightLayout"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/fpsmemberlinearLayoutTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <!--changed the width to 180 pl conform it exact value is 70dp-->
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="120dp">
+
+                    <TextView
+                        android:id="@+id/fpsmembersname1"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/beneficiary_list"
+                        android:textColor="@color/white"
+                        android:textSize="23dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/aepslinearLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_background"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <!--changed the width to 180 pl conform it exact value is 70dp-->
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/aepsmembersname"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="@drawable/aeps_tg"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/aems"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:text="AePs"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/debitlinearLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_background"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <!--changed the width to 180 pl conform it exact value is 70dp-->
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/debitimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="@drawable/card_tg"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/debitcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:text="Debit/Credit Card"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/cashlinearLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_background"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <!--changed the width to 180 pl conform it exact value is 70dp-->
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/cashimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="@drawable/cash_tg"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/cashtextview"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:text="Cash"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/fingerHeadingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/grey"
+                android:text="Select Bank"/>
+            <RelativeLayout
+                android:id="@+id/fingerSpinnerLayout"
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+                <com.omneagate.Util.NoDefaultSpinner
+                    android:id="@+id/fingerSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_background" />
+                <RelativeLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:src="@drawable/arrow_brown" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/grey"
+                android:text="Authentication"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Finger Print" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="IRIS" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:weightSum="2"
+                android:layout_above="@id/bottom_layout"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_weight="2"
+                    android:visibility="visible"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_bg"
+                    android:text="Pay"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

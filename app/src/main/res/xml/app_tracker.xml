@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId"> UA-70046074-4</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+    <screenName name="com.omneagate.activity.TgLoginActivity">Login Screen</screenName>
+    <screenName name="com.omneagate.activity.TgFpsMembersActivity">FPS MEMBER Screen</screenName>
+    <screenName name="com.omneagate.activity.TgScanFingerPrintActivity">FPS MEMBER - Scan Finger Screen</screenName>
+    <screenName name="com.omneagate.activity.TgIrisScanActivity">FPS MEMBER - Scan Iris Screen</screenName>
+    <screenName name="com.omneagate.activity.TgDashBoardActivity">Dashboard Screen</screenName>
+    <screenName name="com.omneagate.activity.TgReportsDashBoardActivity">Report Dashboard Screen</screenName>
+    <screenName name="com.omneagate.activity.TgSalesActivity">Sales Screen</screenName>
+    <screenName name="com.omneagate.activity.TgSalesEntryActivity">Sales entry Screen</screenName>
+    <screenName name="com.omneagate.activity.TgSalesIrisScanActivity">Sales Scan Finger Screen</screenName>
+    <screenName name="com.omneagate.activity.TgSalesFingerPrintActivity">Sales Scan Iris Screen</screenName>
+    <screenName name="com.omneagate.activity.TgSalesConfirmationActivity">Sales Confirmation Screen</screenName>
+    <screenName name="com.omneagate.activity.TgProductListActivity">Sales product Screen</screenName>
+    <screenName name="com.omneagate.activity.TgDeviceSettingActivity">Device Setting Screen</screenName>
+    <screenName name="com.omneagate.activity.TgServerSettingsActivity">Server Setting Screen</screenName>
+    <screenName name="com.omneagate.activity.TgCardPositionReportActivity">Card Position Report Screen</screenName>
+    <screenName name="com.omneagate.activity.TgFpsMonthlyClosingReportActivity">Fps Monthly Closing Report Activity Screen</screenName>
+    <screenName name="com.omneagate.activity.TgMobileNumUpdateDetailActivity">Mobile Number Update Screen</screenName>
+    <screenName name="com.omneagate.activity.TgMobileNumberUpdateWithIrisActivity">Mobile Number Update Iris Screen</screenName>
+    <screenName name="com.omneagate.activity.TgMobileNumUpdateDetailActivity">Mobile Number Update Finger print Screen</screenName>
+    <screenName name="com.omneagate.activity.TgAuthenticateMemberActivity">Authenticate Member Screen</screenName>
+    <screenName name="com.omneagate.activity.TgAuthenticateIrisScanActivity">Authenticate Member Iris Screen</screenName>
+    <screenName name="com.omneagate.activity.TgAuthenticateMemberFingerScanActivity">Authenticate Member Finger print Screen</screenName>
+    <screenName name="com.omneagate.activity.TgReceiveGoods">Receive Goods Screen</screenName>
+    <screenName name="com.omneagate.activity.TgReceivegoodsComodityList">Receive Goods Update Screen</screenName>
+    <screenName name="com.omneagate.activity.TgFPSReportsAllotmentActivity">Allotment Report Screen </screenName>
+    <screenName name="com.omneagate.activity.TgReceivegoodsComodityList">Receive Goods Update Screen</screenName>
+    <screenName name="com.omneagate.activity.TgReceivegoodsComodityList">Receive Goods Update Screen</screenName>
+</resources>

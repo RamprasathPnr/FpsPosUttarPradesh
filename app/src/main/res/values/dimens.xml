@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="undo_bar_height_holo">64dp</dimen>
+    <dimen name="undo_bar_height_kitkat">48dp</dimen>
+    <dimen name="undo_bar_height_lollipop">48dp</dimen>
+    <dimen name="undo_bar_max_width_lollipop">@null</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--Qr code-->
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="edit_text">25dp</dimen>
+    <dimen name="txtview_hint">15sp</dimen>
+    <dimen name="textview">18dp</dimen>
+    <dimen name="btn_text">20dp</dimen>
+    <dimen name="empty_view">30dp</dimen>
+    <dimen name="title_txt">26dp</dimen>
+    <dimen name="actionbartextsize">25sp</dimen>
+    <dimen name="table_title">16sp</dimen>
+
+    <dimen name="left_view">0dp</dimen>
+    <dimen name="left_view_te">0dp</dimen>
+    <dimen name="left_view_vv">0dp</dimen>
+    <dimen name="view_mar_left">42.5dp</dimen>
+
+    <dimen name="view_mar_left_receipt">36dp</dimen>
+</resources>

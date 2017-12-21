@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omneagate.activity"
+    android:versionCode="2"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGE" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <!-- Bluetooth Permissions -->
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".GlobalAppState"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- The following two intent-filters are the key to set homescreen -->
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SaleActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QrCodeWithOTPActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeneficiaryOTPActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StockCheckActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RMNActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityEntitlement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="jim.h.common.android.zxinglib.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:keepScreenOn="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SalesSummaryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivitySalesSubmission"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeneficiaryActivationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_beneficiary_activation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FpsStockInwardActivity"
+            android:label="@string/title_activity_fps_stock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FpsStockInwardDetailActivity"
+            android:label="@string/title_activity_fps_stock_inward_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AutoUpgrationActivity"
+            android:label="@string/autoUpgrade"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionCommodityActivity"
+            android:label="@string/title_activity_transaction_commodity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FpsIndentRequestActivity"
+            android:label="@string/title_activity_fps_intent_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BillActivity"
+            android:label="@string/title_activity_fps_intent_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FpsManualInwardActivity"
+            android:label="@string/title_activity_fps_intent_request"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.com.omneagate.service.ConnectionHeartBeat" />
+        <service android:name="com.com.omneagate.service.UpdateDataService" />
+        <service android:name="com.com.omneagate.service.RemoteLoggingService" />
+        <service android:name="com.com.omneagate.service.OfflineTransactionManager" />
+        <service android:name="com.com.omneagate.service.OfflineInwardManager" />
+
+
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".IncomingSMSReceiver"
+            android:label="IncomingSMSReceiver">
+            <intent-filter android:priority="999999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BillDetailActivity"
+            android:label="@string/title_activity_bill_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.BeneficiaryCardActivationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.CardWithOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.CardSummaryWithOutOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.CameraActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SMSActivation.CardSalesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.BillSuccessCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SMSActivation.CardRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuccessFailureActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesSummaryWithOutOTPActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BillSuccessActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_bill_success" />
+        <activity
+            android:name=".SMSActivation.BeneficiarySubmissionActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_beneficiary_submission"></activity>
+    </application>
+
+</manifest>

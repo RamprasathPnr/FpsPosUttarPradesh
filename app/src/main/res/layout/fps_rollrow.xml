@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/saleOrder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="6.07"
+        android:background="@drawable/all_grid_back"
+        android:padding="2dp">
+
+        <com.omneagate.Util.SquareLayout
+            android:id="@+id/sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#bb0073"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgeicon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/icon_sale_order" />
+        </com.omneagate.Util.SquareLayout>
+
+        <TextView
+            android:id="@+id/sales_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/sales"
+            android:text="Sale Order"
+            android:textColor="#424141"/>
+    </RelativeLayout>
+
+</LinearLayout>

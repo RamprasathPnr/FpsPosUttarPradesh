@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/memberAadharNoTv"
+            android:layout_centerVertical="true"
+            android:text="rgfrggdfdgdsgdfgdfgd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="normal"
+            android:singleLine="true"
+            android:textSize="25dp"
+            android:textColor="@color/grey"/>
+        <ImageView
+            android:id="@+id/bfdImg"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/memberAadharNoTv"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/best_three_fingers_icon"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape>
+            <solid
+                android:color="#43ff8c" />
+
+            <corners
+                android:radius="7dp" />
+        </shape>
+
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#00AD43"
+                android:endColor="#00AD43"
+                android:angle="270" />
+
+            <corners
+                android:radius="7dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+</selector>
+
+
+
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="#009F40"/>
+                <stroke android:color="#009F40" android:width="2dp" />
+                &lt;!&ndash;corners allow us to make the rounded corners button&ndash;&gt;
+                <corners android:radius="7dp" />
+            </shape>
+        </item>
+    </selector>-->

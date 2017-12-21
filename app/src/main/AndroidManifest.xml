@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omneagate.activity">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <compatible-screens>
+        <supports-screens android:largeScreens="true" />
+        <supports-screens android:xlargeScreens="true" />
+        <supports-screens android:smallScreens="false" />
+    </compatible-screens>
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGE" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <!-- Bluetooth Permissions -->
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".GlobalAppState"
+        android:allowBackup="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/ic_launcher_te"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:keepScreenOn="true"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SaleActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".QRCodeSalesActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AadharQRBasedSalesOrderActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AadharCardSalesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".UpdateConfirmUserDetailsActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureUpdationActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureUpdateActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureSeedingActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".UnsyncBillActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureSalesActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureActivationActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AdvanceStockActvity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AdvancedStockConfirmActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CardActivationActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BeneficiaryRationCardActivationNewActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BeneficiaryOapAnpActivationActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BeneficiaryListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RationCardSummaryReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RationCardActivationAadharActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".StockCheckActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".StockCheckSummaryActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".RationCardSalesActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SalesEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivityEntitlement"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SalesSummaryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/titleActivitySalesSubmission"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ActivationSuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_beneficiary_activation"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".OapAnpActivationSuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_beneficiary_activation"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".FpsStockInwardActivity"
+            android:label="@string/title_activity_fps_stock"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BackgroundServiceHistoryActivity"
+            android:label="@string/background_process_history"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ServiceHistoryDetailActivity"
+            android:label="@string/background_process_history"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ReconciliationHistoryActivity"
+            android:label="@string/background_process_history"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ReconciliationActivity"
+            android:label="@string/reconciliation"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MobileOTPOptionsActivity"
+            android:label="@string/title_activity_fps_stock"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MobileOTPNeedActivity"
+            android:label="@string/title_activity_fps_stock"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".FpsStockInwardDetailActivity"
+            android:label="@string/title_activity_fps_stock_inward_detail"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".StockAdjustmentPage"
+            android:label="@string/stock_adjust"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AutoUpgrationActivity"
+            android:label="@string/autoUpgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".FpsStockAdjustmentListActivity"
+            android:label="@string/autoUpgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".RationCardUpdateActivity"
+            android:label="@string/autoUpgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".TransactionCommodityActivity"
+            android:label="@string/title_activity_transaction_commodity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BillActivity"
+            android:label="@string/title_activity_fps_intent_request"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BillByDateActivity"
+            android:label="@string/title_activity_fps_intent_request"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".StockAllocationActivity"
+            android:label="@string/stock_allocation_title"
+            android:screenOrientation="sensorLandscape" />
+
+        <service android:name="com.omneagate.service.HeartBeatService" />
+        <service android:name="com.omneagate.service.StatisticsServices" />
+        <service android:name="com.omneagate.service.AllocationService" />
+        <service android:name="com.omneagate.service.RegularSyncService" />
+        <service android:name="com.omneagate.service.InwardService" />
+        <service android:name="com.omneagate.service.AdjustmentService" />
+        <service android:name="com.omneagate.service.BillService" />
+        <service android:name="com.omneagate.service.AdvanceStockService" />
+        <service android:name="com.omneagate.service.CloseSaleService" />
+        <service android:name="com.omneagate.service.LoginService" />
+        <service android:name="com.omneagate.service.RemoteLogService" />
+        <service android:name="com.omneagate.service.SyncExceptionService" />
+        <service android:name="com.omneagate.service.MigrationService" />
+        <service android:name="com.omneagate.service.BiometricService" />
+        <service android:name="com.omneagate.service.InspectionReportService" />
+        <service android:name="com.omneagate.service.InspectionReportAckService" />
+        <service android:name="com.omneagate.service.InspectionCriteriaService" />
+
+        <receiver android:name="com.omneagate.receiver.HeartBeatAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.StatisticsAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.AllocationAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.RegularSyncAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.InwardAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.AdjustmentAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.BillAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.AdvanceStockAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.CloseSaleAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.LoginReceiver" />
+        <receiver android:name="com.omneagate.receiver.RemoteLogReceiver" />
+        <receiver android:name="com.omneagate.receiver.SyncExceptionAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.MigrationAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.BiometricAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.InspectionReportAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.InspectionReportAckAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.InspectionCriteriaAlarmReceiver" />
+        <receiver android:name="com.omneagate.receiver.ServerTimeSetReceiver" />
+
+        <!-- <service android:name="com.omneagate.service.OfflineImageManager"/> -->
+        <!-- <service android:name="com.omneagate.service.RemoteLoggingService"/> -->
+        <!-- <service android:name="com.omneagate.service.OfflineTransactionManager"/> -->
+        <!-- <service android:name="com.omneagate.service.OfflineInwardManager"/> -->
+        <!-- <service android:name="com.omneagate.service.LoginHistoryService"/> -->
+        <!-- <service android:name="com.omneagate.service.OfflineCloseSaleManager"/> -->
+        <!-- <service android:name="com.omneagate.service.SyncExcUpdateToServer"/> -->
+        <service android:name="com.omneagate.service.FirstSyncExceptionService" />
+        <service android:name="com.omneagate.service.ServerTimeSetService" />
+        <service android:name="com.omneagate.service.Mantra_service" />
+        <!-- <service android:name="com.omneagate.service.SyncProcessedAdvanceStock"/> -->
+        <!-- <service android:name="com.omneagate.service.InspectionService.OfflineReportService"/> -->
+        <!-- <service android:name="com.omneagate.service.InspectionService.OfflineCriteriaService"/> -->
+        <!-- <service android:name="com.omneagate.service.InspectionService.OfflineReportAckService"/> -->
+
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".IncomingSMSReceiver"
+            android:label="IncomingSMSReceiver">
+            <intent-filter android:priority="999999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!-- <receiver android:name=".AlarmReceiver"/> -->
+        <!--
+        <receiver android:name=".BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name=".BillDetailActivity"
+            android:label="@string/title_activity_bill_Detail"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".FpsStockInwardReceivedActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SuccessFailureActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BillSearchActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MonthlySalesReportActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MonthlyInventoryReportActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MonthlyCloseSaleReportActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MembersAadharRegistrationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".BillByFromToDateActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CloseSaleSummaryActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SalesSummaryWithOutOTPActivity"
+            android:label="@string/title_activity_success_failure"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BillSuccessActivity"
+            android:label="@string/title_activity_bill_success"
+            android:screenOrientation="sensorLandscape">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" /> -->
+            <!-- </intent-filter> -->
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".StockManagementActivity"
+            android:label="@string/title_activity_bill_success"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".QRActivationActivity"
+            android:label="@string/title_activity_bill_success"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_bill_success"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SyncPageActivity"
+            android:label="@string/title_activity_sync_page"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SaleOrderActivity"
+            android:label="@string/title_activity_sale_order"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MobileOTPActivity"
+            android:label="@string/title_activity_mobile_otp"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.omneagate.CrashActivity"
+            android:label="@string/title_activity_crash"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.omneagate.SEND_LOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationConfirmActivity"
+            android:label="@string/title_activity_registration_confirm"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".OapAnpRegistrationConfirmActivity"
+            android:label="@string/title_activity_registration_confirm"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BeneficiaryMenuActivity"
+            android:label="@string/beneficiary_name"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".TransactionsSubmenuActivity"
+            android:label="@string/beneficiary_name"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".OpenStockActivity"
+            android:label="@string/openstock_name"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MissedOpenStockActivity"
+            android:label="@string/openstock_name"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="@string/title_activity_statistics"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".OpenstockActivityEntry"
+            android:label="@string/openstock_name"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".PendingOpenstockActivityEntry"
+            android:label="@string/openstock_name"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VersionUpgradeInfo"
+            android:label="@string/version_upgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VersionUpgradeDetail"
+            android:label="@string/version_upgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".UnsyncBillDetailActivity"
+            android:label="@string/version_upgrade"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".StockInwardConfirmActivity"
+            android:label="@string/advanced_stock"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".UpdateUserDetailsActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".BeneficiaryMemberDetailActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BenefProxyDetailsActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RcScanEntryActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".BenefBfdScanActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".OtpReqEnterActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".TenFingerRegistrationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AddProxyActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RcScanEntryProxyActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AddProxyDetailsActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        -->
+
+        <activity
+            android:name=".InspectionFindingActivity"
+            android:label="@string/inspection_finding"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".StockInspectionActivity"
+            android:label="@string/stock_inspection"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Inspection_theme" />
+        <activity
+            android:name=".CardInspectionActivity"
+            android:label="@string/card_inspection"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Inspection_theme" />
+        <activity
+            android:name=".InspectionLoginActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionOTPActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionDashboardActivity"
+            android:label="@string/dashboard"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionListViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionReviewListViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionAcknowledgeActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspectionReviewListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".OtherInspectionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Inspection_theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ShopOpenCloseActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Inspection_theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".WeighmentInspectionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Inspection_theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReconciliationManualsyncActivity"
+            android:label="@string/background_process_history"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".WeighingMachineActivity" />
+
+        <!--
+        <receiver android:name="com.omneagate.receiver.Receiver_Usbdetached">
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+        </receiver>
+        -->
+        <activity
+            android:name=".TgDeviceSettingActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgServerSettingsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgDashBoardActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgSettingsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgLoginActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgSalesActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".TgFpsMembersActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgTenFingerRegistrationActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgTenFingerFpsMemberRegistrationActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgScanFingerPrintActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgProductListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.omneagate.activity.TgProductListActivity" />
+        </activity>
+        <activity
+            android:name=".TgSalesPaymentEntryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgSalesEntryActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgPaymentModeActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgIrisScanActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/iris_device_filter" />
+        </activity>
+        <activity
+            android:name=".TgReceiveGoods"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgMobileNumberUpdateActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgMobileNumUpdateDetailActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".TgAuthenticateMemberActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgCardPositionReportActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgReceivegoodsComodityList"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgReportsDashBoardActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgFPSReportsAllotmentActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MTgFPSReportsClosingActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgSalesFingerPrintActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgSalesIrisScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/iris_device_filter" />
+        </activity>
+        <activity
+            android:name=".TgReportsSalesActivity"
+            android:screenOrientation="sensorLandscape" />
+
+        <receiver android:name="com.omneagate.receiver.Usb_attached_receiver">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </receiver>
+        <receiver android:name="com.omneagate.receiver.Receiver_Usbdetached">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+        </receiver>
+        <receiver android:name="com.omneagate.receiver.IrisScannerAttached">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </receiver>
+
+        <activity
+            android:name=".TgFpsReportsStockInWardActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".TgFpsReportsSalesDayActivity" />
+        <activity android:name=".TgFpsMonthlyClosingReportActivity" />
+        <activity android:name=".TgCurrentClosingBalanceReport" />
+        <activity android:name=".TgSalesConfirmationActivity" />
+        <activity android:name=".TgAuthenticateMemberFingerScanActivity" />
+        <activity
+            android:name=".TgAuthenticateIrisScanActivity"
+            android:launchMode="singleTask">
+
+            <!--
+        <intent-filter>
+            <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+        </intent-filter>
+            -->
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/iris_device_filter" />
+        </activity>
+        <activity
+            android:name=".TgMobileNumberUpdateWithIrisActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".TgViewLastTransactionActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgWalletPaymentFingerPrintActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgWalletPaymentIrisActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TgReceiveKeroseneGoodsActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".TgPortabilityDayWiseReport"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".TgPortabilityMonthWiseReport"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".TgPortabilityRequestActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

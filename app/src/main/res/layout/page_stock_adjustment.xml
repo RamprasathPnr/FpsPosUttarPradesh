@@ -1,0 +1,301 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:id="@+id/fpsInvardlinearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="110dp"
+        android:background="#777777"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardchellanIdLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="#"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardoutwardDateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Challan No"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/godownRefNoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Challan No"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="6dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardactionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Dispatch Date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardoutwardGodownNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Godown Code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardoutwardLapsedTimeabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="LapsedTime"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsInvardactionGodownStatusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Status"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/fpsAckLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/navigationLayout"
+        android:layout_below="@+id/fpsInvardlinearLayoutTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1">
+        <!--<com.omneagate.Util.PullToRefresh.LoadMoreListView
+            android:id="@+id/listView_fps_stock_adjustment"
+            style="@style/scrollbar_shape_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#777777"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false" />-->
+       <!-- <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/progress_bar_color" />-->
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/scrollbar_shape_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:id="@+id/listView_fps_stock_inward_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp" />
+
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/linearLayoutNoRecords"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tvNoRecords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_records"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--  <ScrollView
+          android:id="@+id/scrollView"
+          style="@style/scrollbar_shape_style"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/navigationLayout"
+          android:layout_below="@+id/fpsInvardlinearLayoutTitle"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:fadeScrollbars="false">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <LinearLayout
+                  android:id="@+id/listView_fps_stock_inward"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+              </LinearLayout>
+
+              <RelativeLayout
+                  android:id="@+id/linearLayoutNoRecords"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone">
+
+                  <TextView
+                      android:id="@+id/tvNoRecords"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/no_records"
+                      android:textColor="#000000"
+                      android:textSize="23dp"
+                      android:textStyle="bold" />
+
+              </RelativeLayout>
+          </LinearLayout>
+      </ScrollView>
+  -->
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bottomScreen"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvViewStockHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="#444444"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+
+        <Button
+
+            android:id="@+id/btnClose"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:background="#0277BD"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottomScreen"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

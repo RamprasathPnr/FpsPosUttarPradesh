@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.com.com.omneagate.activity.SMSActivation.BeneficiarySubmissionActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/beneficiaryActivate"
+            android:id="@+id/tvBeneficiaryActivation"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/beneficiaryDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Ration Card Number"
+                        android:id="@+id/tvOldRationCardNo"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtOldFamilyCardNo"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="Ration Card Number"
+                    android:ems="8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvRMN"
+                        android:text="Mobile Number(RMN)"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="8"
+                    android:layout_weight="1"
+                    android:hint="@string/rMobile"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:id="@+id/edtRegisteredMobileNo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/cardTypes"
+                    android:id="@+id/tvCardType"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCardType"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:prompt="@string/noOfCylinderTitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No of Adults"
+                    android:id="@+id/tvAdult"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerAdult"
+                    android:text="2"
+                    android:layout_weight="1"
+                    android:prompt="@string/noOfCylinderTitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No of Children"
+                    android:id="@+id/tvChild"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerChild"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:prompt="@string/noOfCylinderTitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/tvNoOfCylinder"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*" />
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCylindersType"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:prompt="@string/noOfCylinderTitle" />
+                <!-- <EditText
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/numberOfCylinder"
+                     android:layout_weight="1"
+                     android:maxLength="1"
+                     android:imeOptions="actionDone"
+                     android:digits="012"
+                     android:inputType="number"
+                     android:hint="@string/cylinderHint"
+                     android:ems="8" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="QR Code"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Scan QR Code"
+                        android:id="@+id/btnScanQr"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_camera"
+                        android:onClick="submitScanQr" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Capture Ration Card Image"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Capture Image"
+                        android:id="@+id/btnCapture"
+                        android:background="@drawable/button_camera"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#ffffff"
+                        android:onClick="submitImageCapture" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:id="@+id/btnSubmit"
+                    android:background="@drawable/button_login"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ffffff"
+                    android:onClick="submitBeneficiaryActivationDetails" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:id="@+id/btnCancel"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_login"
+                    android:layout_toLeftOf="@+id/btnSubmit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tvUfc"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:id="@+id/rationImage"
+                />
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

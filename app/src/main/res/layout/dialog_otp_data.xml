@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="900dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/myMobileOTP"
+                android:layout_width="900dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_ground_otp_register"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/myMobileOTPBackground"
+                    android:layout_width="900dp"
+                    android:layout_height="400dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#BABEC1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/buttonNwCancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/cancel" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#BABEC1" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/buttonRegenerate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="@string/regenerate_otp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

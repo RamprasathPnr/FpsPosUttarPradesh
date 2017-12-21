@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/importDb"
+        android:title="@string/menuStore"
+        android:actionViewClass="android.widget.Button" />
+    <item
+        android:id="@+id/retrieveDb"
+        android:title="@string/menuRetrieve"
+        android:actionViewClass="android.widget.Button" />
+    <!--
+        <item
+            android:id="@+id/loadLocalDB"
+            android:title="@string/loadLocalDB"
+            android:actionViewClass="android.widget.Button">
+
+        </item>
+    -->
+
+    <item
+        android:id="@+id/loadFpsStock"
+        android:title="@string/FpsStockInward"
+        android:actionViewClass="android.widget.Button" />
+
+    <item
+        android:id="@+id/autoUpgradeVersion"
+        android:title="@string/autoUpgrade"
+        android:actionViewClass="android.widget.Button" />
+
+    <item
+        android:id="@+id/viewBill"
+        android:title="@string/fpsViewBill"
+        android:actionViewClass="android.widget.Button" />
+
+    <item
+        android:id="@+id/transactionInOutBalance"
+        android:title="@string/inOutBalance"
+        android:actionViewClass="android.widget.Button">
+
+    </item>
+    <item
+        android:id="@+id/stockCheck"
+        android:title="@string/stockCheck"
+        android:actionViewClass="android.widget.Button" />
+    <item
+        android:id="@+id/FpsIntentRequest"
+        android:title="@string/fpsProductIntentRequest"
+        android:actionViewClass="android.widget.Button" />
+
+
+</menu>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">FPS</string>
+    <string name="language">Language</string>
+    <string name="publicUrl">Change Url </string>
+    <string name="unassociated">Device is Unassociated to any Store</string>
+    <string name="inactiveDevice">Device is Inactive</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="menuStore">Restore</string>
+    <string name="menuRetrieve">Backup</string>
+    <string name="loadLocalDB">Load Local DB</string>
+    <string name="english">English</string>
+    <string name="sales">Continue</string>
+    <string name="printBill">Print</string>
+    <string name="deviceId">Device id</string>
+    <string name="loginUserNameEmpty">Username should not be empty</string>
+    <string name="invalidMobile">Invalid mobile number</string>
+    <string name="loginPasswordEmpty">Password should not be empty</string>
+    <string name="headerAllPage">Civil Supplies and Consumer Protection Department</string>
+    <string name="successInsertion">Bill submitted Successfully</string>
+    <string name="loginUserName">Username</string>
+    <string name="loginPassword">Password</string>
+    <string name="noNetworkConnection">No Network Connection</string>
+    <string name="deviceRegistration">Device registered successfully.Please contact helpdesk for approval</string>
+    <string name="loginButton">Login</string>
+    <string name="noItemSelected">No items Selected</string>
+    <string name="itemHigh">Received Quantity should not be blank</string>
+    <string name="itemZero">Received Quantity should not blank</string>
+    <string name="wrongSelection">Please Enter correct Number</string>
+    <string name="exceedsLimit">Quantity entered is more than remaining entitlement</string>
+    <string name="noUpdateAvailable">No updates available</string>
+    <string name="cardBlocked">Card blocked.Contact HelpDesk</string>
+    <string name="thresholdLimit">30</string>
+    <string name="cardActivate">Card activation take one day time. Try tomorrow</string>
+    <string name="OTPDialog">OTP Dialog</string>
+    <!-- <string name="loginPasswordSize">Password should more than 5 chars</string> -->
+    <string name="loginInvalidUserPassword">Invalid Username or Password</string>
+    <string name="titleActivityMain">ScanActivity</string>
+    <string name="logout">Logout</string>
+    <string name="changeUrl">Change Url</string>
+    <string name="restoreHead">Backup FPS database</string>
+    <string name="pdsSolution">PDS Solution</string>
+    <string name="titleActivityEntitlement">EntitlementActivity</string>
+    <string name="serviceTimeout" tools:ignore="MissingTranslation">300000</string>
+    <string name="hashMethod">SHA-256</string>
+    <string name="hashIterations">100000</string>
+    <string name="connectionRefused">Server Connection Error</string>
+    <string name="saltSize">10</string>
+    <string name="logoutString">Do you want to logout?</string>
+    <string name="poolSize">4</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="rMN">RMN</string>
+    <string name="login">Login</string>
+    <string name="scanQR">   QR - OTP Disabled </string>
+    <string name="customers">Customer Details</string>
+    <string name="numberCylinder">No Of Cylinder</string>
+    <string name="mobileOTP">OTP without QR</string>
+    <string name="inputOTP">Enter OTP</string>
+    <string name="inputCard">Card Number</string>
+    <string name="rMobileOTP">Enter OTP </string>
+    <string name="mobileOTPWrong">Wrong OTP</string>
+    <string name="retryCount">Retry count exceeded</string>
+    <string name="scanWithOutOTP">QR - With OTP</string>
+    <string name="beneficiaryData">Card Activation</string>
+    <string name="headFamily">Head of the Family</string>
+    <string name="total">Total</string>
+    <string name="loadLocal">LOAD LOCAL DB</string>
+    <string name="beneficiaryActivate">Beneficiary Activation Details</string>
+    <string name="ufcCode">UFC Code</string>
+    <string name="numberOfProducts">Number of Commodities</string>
+    <string name="address">Address</string>
+    <string name="totalAmount">Amount</string>
+    <string name="edit">Edit</string>
+    <string name="password">Password</string>
+    <string name="rMobile">Registered Mobile </string>
+    <string name="semis">:</string>
+    <string name="availed">Qty. to Bill</string>
+    <string name="ackStatus">Acknowledgement Status</string>
+    <string name="product">Commodity</string>
+    <string name="price">Rate</string>
+    <string name="entitled">Entitled Qty.</string>
+    <string name="quantity">Qty. to Bill</string>
+    <string name="receivedQuantity">Received Quantity</string>
+    <string name="viewString">View</string>
+    <string name="cardActivated">Card activated</string>
+    <string name="cardAlreadyActivated">Card already activated</string>
+    <string name="oldRationNull">Old ration card number should not null</string>
+    <string name="rmnNull">Mobile number should not null</string>
+    <string name="rmnExist">Mobile number Exist</string>
+    <string name="cylinderNull">No of Cylinders should not null</string>
+    <string name="com.omneAgate">Powered By OMNE AGATE</string>
+    <string name="titleActivitySalesSubmission">SalesSummaryActivity</string>
+    <string name="title_activity_beneficiary_activation">BeneficiaryActivationActivity</string>
+    <string name="dbExported">Database is exported into sdcard successfully</string>
+    <string name="externalStorageWritable">Sdcard is not writable</string>
+    <string name="externalStorageNotAvailable">Sdcard is not available</string>
+    <string name="externalStorageNotWritable">Sdcard is not writable</string>
+    <string name="noFreeInSdcard">No free space available in sdcard</string>
+    <string name="dbImported">FPS is imported to local db</string>
+    <string name="noFileSdcard"> No file in sdcard back up</string>
+    <string name="oldDbBackup">Existing database copied into backup folder</string>
+    <string name="backupFolderNot"> backup folder is not created</string>
+    <string name="noOfCylinderTitle">Choose No of Cylinder</string>
+    <string name="cylindersAvail">Cylinders </string>
+    <string name="oldFamilyCard">Old Family Card Number</string>
+    <string name="oldFamilyCardHint">Old Family Card Number</string>
+    <string name="cylinderHint">Number of Cylinders</string>
+    <string name="cardTypes">Card Type</string>
+    <string name="userName">Login Id</string>
+    <string name="loginId">Login Id</string>
+    <string name="cardTypeTitle">Choose Card Type</string>
+    <string name="accessDenied">Access Denied</string>
+    <string name="passwordMismatch">Password Mismatch</string>
+    <string name="inCorrectUnamePword">Incorrect Username and Password</string>
+    <string name="inputError">Input Error</string>
+    <string name="invalidParameter">Invalid Parameter</string>
+    <string name="invalidParameterFormat">Invalid Parameter Format</string>
+    <string name="genericDatabaseError">Generic Database Error</string>
+    <string name="missingParameter">Missing Parameter</string>
+    <string name="serviceNotAvailable">Service not available. Please try again</string>
+    <string name="cardNotPresent">Card is not present</string>
+    <string name="connectionError">Connection Error. Please try again</string>
+    <string name="fpsBeneficiaryMismatch">Beneficiary does not belong to the particular FPS</string>
+    <string name="beneficiaryExceededAllotment">Beneficiary exceeded entitlement</string>
+    <string name="beneficiaryInvalid">Card Blocked</string>
+    <string name="deviceInvalid">Device inactive</string>
+    <string name="fpsStoreInvalid">FPS Store inactive</string>
+    <string name="stockNotAvailable">Commodities stock unavailable</string>
+    <string name="stockNotAvailableProduct"> stock unavailable</string>
+    <string name="BeneficiaryMembersNotFount">Beneficiary family details not found</string>
+    <string name="invalidUpdateStockRequest">Invalid update stock request.</string>
+    <string name="fpsStockNotAvailable">No valid FPSStock for update</string>
+    <string name="nonAdminUser">Invalid request. Please login with Admin credentials</string>
+    <string name="defaultError">Default Error</string>
+    <string name="restoration">Restore FPS DB</string>
+    <string name="retrieve">Retrieve FPS DB</string>
+    <string name="retrieveDbString">Retrieve FPS database into sdcard</string>
+    <string name="restorationDbString">Restore db file from sdcard backup folder </string>
+    <string name="pull_to_refresh_pull_label" tools:ignore="MissingTranslation">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label" tools:ignore="MissingTranslation">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label" tools:ignore="MissingTranslation">Loading...</string>
+    <string name="pull_to_refresh_tap_label" tools:ignore="MissingTranslation">Tap to refresh...</string>
+    <string name="backupDb">Backup</string>
+    <!-- Commodity Transaction at POS current date -->
+    <string name="CommodityTransaction">Transaction Commodity</string>
+    <string name="productTransaction">Commodity</string>
+    <string name="openBalance">Open Balance</string>
+    <string name="soldQuantity">Sold</string>
+    <string name="closingBalance">Closing Balance</string>
+    <string name="currentStock">Current Stock</string>
+    <string name="amountProduct">Amount</string>
+    <string name="FpsStockInward">Stock Inward</string>
+    <string name="inOutBalance">Close Sale</string>
+    <string name="stockCheck">Stock Report</string>
+
+    <!-- Fbs stock inward -->
+    <string name="chellanId">Challan ID</string>
+    <string name="ackDate">Ack Date</string>
+    <string name="batchNumber">Batch No</string>
+    <string name="outwardDate">Outward Date</string>
+    <string name="action">Action</string>
+    <string name="receivedQuantityHigh">Received Quantity should not be greater than the Total Quantity</string>
+    <string name="FPSSTOCKINWARD">FPS STOCK INWARD</string>
+    <string name="noRecords">No Records Available</string>
+    <string name="StockUpdation" tools:ignore="MissingTranslation">Stock Inward Updation</string>
+
+    <!-- Fbs stock inward  Detail -->
+    <string name="fpsInvardDetailProductName">Product</string>
+    <string name="fpsInvardDetailQuantity">Quantity</string>
+    <string name="fpsInWardDetailReceivedQuantity">Received Quantity</string>
+    <string name="AcknowledgementStatus">Acknowledgement Status</string>
+    <string name="fpsIDSubmit">Submit</string>
+    <string name="fpsIDCancel">Cancel</string>
+    <string name="FIDChellanIdLabel">Chellan ID</string>
+    <string name="FIDAckDateLabel">Ack.Date</string>
+    <string name="FIDBatchNoLabel">Batch No</string>
+    <string name="FPSSTOCKINWARDDETAILS">FPS STOCK INWARD DETAILS</string>
+    <string name="stockUpdation">Stock is updated in the server</string>
+    <string name="stockInwardResponseTitle">Stock Inward Response</string>
+    <string name="messageStockInwardupdate">Stock updated in server</string>
+    <string name="status" tools:ignore="MissingTranslation">Status</string>
+    <string name="messageStockManualInwardupdate">Stock Updated</string>
+    <string name="selectGodown">Select Godown</string>
+    <string name="challanNoGreaterZero">Challan No should be greater than zero</string>
+    <string name="enterChellanNo">Enter Challan No</string>
+    <string name="challanNo">Chellan No</string>
+    <string name="stockInwardManual">Stock Inward Manual</string>
+    <string name="enterFirstLetterOfGodown">Enter first letter of Godown்</string>
+    <string name="godownNameIncorrect">Godown Name is incorrect</string>
+
+    <!-- Auto Upgrade Version -->
+    <string name="autoUpgrade">Auto Upgrade Version</string>
+    <string name="downloadgingFile" tools:ignore="MissingTranslation">Downloading ...</string>
+
+    <!-- Fps Intent Request Product -->
+    <string name="FPSINTENTREQUEST"> FPS Intent Request Product</string>
+    <string name="fpsProductIntentRequest">Manual Indent Request</string>
+    <string name="serverUpdated">Indent request updated to server successfully</string>
+    <string name="quantityNeed">Quantity</string>
+    <string name="fpsIntentRequest">Indent Request</string>
+
+    <!--Stock Adjustment-->
+    <string name="fpsStockAdjustmentProductName">Commodity</string>
+    <string name="fpsStockAdjustmentcurrentStock">Current Stock</string>
+    <string name="fpsStockAdjustmentQuantity">Adjust Quantity</string>
+    <string name="fpsStockAdjustmentOperation">Adjust Operation</string>
+    <string name="stockAdjustment">Stock Adjustment</string>
+    <string name="enterAdjustQuantity">Enter Stock Adjustment Quantity</string>
+    <string name="stockAdjustmentTitle">Stock Adjustment </string>
+    <string name="messageAdjustUpdated">Stock Adjustment Updated Successfully</string>
+
+    <!-- Bill Detail -->
+    <string name="billDetails">Bill Detail</string>
+    <string name="billDetailSerialNo">No</string>
+    <string name="billDetailProductName">Product</string>
+    <string name="billDetailQuantity">Quantity</string>
+    <string name="billDetailProductPrice">Price</string>
+    <string name="billDetailTotalLabel">Total</string>
+    <string name="billDetailUfcLabel">UFC</string>
+    <string name="billDetailTxnBill">Transaction Ref No</string>
+    <string name="billDetailDateLabel">Date</string>
+    <string name="billDetailAddressLabel">Address</string>
+    <string name="billDetailFamilyMembersLabel">Family Members</string>
+    <string name="billDetailFamilyHeadOfTheFamilyLabel">Family Head</string>
+    <string name="billDetailAmountLabel">Transaction Date</string>
+    <string name="title_activity_bill_Detail">Bill Detail</string>
+    <string name="title_activity_transaction_commodity">TransactionCommodity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="rs">\u20B9</string>
+    <string name="title_activity_qr_code_with_otp">QrCodeWithOTPActivity</string>
+    <string name="title_activity_fps_stock">FpsStockActivity</string>
+    <string name="title_activity_fps_stock_inward_detail">FpsStockInwardDetailActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_fps_intent_request">FpsIntentRequestActivity</string>
+    <string name="purgBill">Purge Bill</string>
+    <string name="noOfDaysBefore">No of Days</string>
+    <string name="purgeBillBItem">Purge Bill Details</string>
+    <string name="noOfDaysLabel">No of days:</string>
+    <string name="title_activity_circular_progress_bar">CircularProgressBarActivity</string>
+    <string name="title_activity_customized_progress_bar">CustomizedProgressBarActivity</string>
+    <string name="fpsViewBill">View Bill</string>
+    <string name="title_activity_fps_view_bill">Bill Summary</string>
+    <string name="billViewSerialNo">No</string>
+    <string name="billViewBillNo">Bill</string>
+    <string name="billViewDate">Date</string>
+    <string name="billViewUfc">UFC</string>
+    <string name="billViewStatus">Status</string>
+    <string name="title_activity_success_failure">SuccessFailureActivity</string>
+
+
+    <string name="print">Print</string>
+    <string name="text_bluetooth_off">Bluetooth is Off</string>
+    <string name="text_bluetooth_on">Bluetooth is On</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_disconnect">Diconnect</string>
+    <string name="text_enable_bluetooth">Enable Bluetooth</string>
+    <string name="text_disable_bluetooth">Disable Bluetooth</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+    <string name="text_list_paired_devices">Paired Devices</string>
+    <string name="text_list_devices">List of Devices</string>
+    <string name="text_pair">Pair</string>
+    <string name="text_print_demo">Print Demo</string>
+    <string name="text_print_receipt">Print Receipt</string>
+    <string name="text_print_text">Print Text</string>
+    <string name="title_activity_print">PrintActivity</string>
+
+    <string-array name="cylindersList">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="adjustmentSpinner">
+        <item>Increase</item>
+        <item>Decrease</item>
+    </string-array>
+    <string name="title_activity_bill_success">BillSuccessActivity</string>
+    <string name="title_activity_beneficiary_submission">BeneficiarySubmissionActivity</string>
+    <string name="screensize">MEDIUM</string>
+</resources>

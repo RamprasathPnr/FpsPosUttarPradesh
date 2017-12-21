@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="550dip"
+    android:layout_height="520sp"
+    android:background="@drawable/dialog_border"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/reldata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewNwTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="DeviceList"
+                android:textColor="#00322a"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textViewNwTitle"
+                android:layout_marginTop="10dp"
+                android:background="@color/dialog_view_background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reldata">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/noDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Devices Found"
+                android:textColor="#00322a" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

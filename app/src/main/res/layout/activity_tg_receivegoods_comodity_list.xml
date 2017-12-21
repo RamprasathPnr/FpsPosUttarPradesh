@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omneagate.activity.TgMobileNumUpdateDetailActivity">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/timeLayout"
+        layout="@layout/tg_user_top_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/timeLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/timeLayout"
+            android:layout_centerInParent="true"
+            android:background="#F4F4F4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/RationcardTypeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_Month"
+                            android:textColor="@color/labelFieldColor"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/category_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cat">
+
+                            <EditText
+                                android:id="@+id/edt_month"
+                                android:layout_width="350dp"
+                                android:layout_height="60dp"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:textColor="#777777"
+                                android:editable="false"
+                                android:background="@drawable/login_text_box"
+                                android:paddingLeft="10dp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/RationcardLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_Year"
+                            android:textColor="@color/labelFieldColor"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/passwordLayout"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_text_box"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:id="@+id/category_lay1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cat">
+
+                            <EditText
+                                android:id="@+id/edt_year"
+                                android:layout_width="350dp"
+                                android:layout_height="50dp"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:textColor="#777777"
+                                android:background="@drawable/login_text_box"
+                                android:paddingLeft="10dp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/selectrodate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_ro"
+                            android:textColor="@color/labelFieldColor"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/selectro_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/cat">
+
+                            <EditText
+                                android:id="@+id/edt_ro"
+                                android:layout_width="350dp"
+                                android:layout_height="60dp"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:textColor="#777777"
+                                android:editable="false"
+                                android:background="@drawable/login_text_box"
+                                android:paddingLeft="10dp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/selectdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ro_date"
+                            android:textColor="@color/labelFieldColor"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/selectdateLayout"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_text_box"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:id="@+id/date_lay1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cat">
+
+                            <EditText
+                                android:id="@+id/edt_date"
+                                android:layout_width="350dp"
+                                android:layout_height="50dp"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:textColor="#777777"
+                                android:background="@drawable/login_text_box"
+                                android:paddingLeft="10dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fpsmemberlinearLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#666666"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/fpsmembersname"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/item_quanity"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fpsmemberuid"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:gravity="center"
+                        android:text="@string/ro_quantity"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fpsbf_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:gravity="center"
+                        android:text="@string/received_stock"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.omneagate.Util.NonScrollListView
+                    android:id="@+id/productlist"
+                    style="@style/scrollbar_shape_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#777777"
+                    android:dividerHeight="0dp"
+                    android:fadeScrollbars="false" />
+
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/productlist"
+                    android:background="@drawable/grey_background"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="visible"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/btnUpdateStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/productlist"
+                    android:background="@drawable/green_background"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/update_stock"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/productlist"
+                    android:background="@drawable/green_background"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="@string/exit"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <!--</LinearLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

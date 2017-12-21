@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/autoUpgradeprogressBar"
+        android:layout_centerInParent="true"
+
+        android:indeterminate="false" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvUploadCount"
+        android:layout_below="@+id/autoUpgradeprogressBar"
+        android:layout_marginTop="66dp"
+        android:layout_alignRight="@+id/autoUpgradeprogressBar"
+        android:layout_alignEnd="@+id/autoUpgradeprogressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/downloadgingFile"
+        android:textSize="30dp"
+        android:id="@+id/tvDownloadTitle"
+        android:layout_above="@+id/autoUpgradeprogressBar"
+        android:layout_alignLeft="@+id/autoUpgradeprogressBar"
+        android:layout_alignStart="@+id/autoUpgradeprogressBar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#0000ff">
+
+        <TextView
+            android:id="@+id/login_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/com.omneagate"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

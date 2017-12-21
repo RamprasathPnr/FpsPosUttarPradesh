@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_tg"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/viewname"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/black" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:id="@+id/lLDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher"></ImageView>
+
+            <EditText
+                android:id="@+id/edtDevice"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/login_text_box"
+                android:editable="false"
+                android:ems="13"
+                android:focusable="false"
+                android:maxLength="40"
+                android:paddingBottom="17dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="17dp"
+                android:singleLine="true"
+                android:text="Device" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lLServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_toRightOf="@+id/lLDevice"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher"></ImageView>
+
+            <EditText
+                android:id="@+id/edtServer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/login_text_box"
+                android:editable="false"
+                android:ems="13"
+                android:focusable="false"
+                android:maxLength="40"
+                android:paddingBottom="17dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="17dp"
+                android:singleLine="true"
+                android:text="Server" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

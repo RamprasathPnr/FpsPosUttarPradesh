@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/actionbar_custom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#333333">
+
+                    <TextView
+                        android:id="@+id/aadharRegLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+android:padding="5dp"
+                    android:background="@drawable/back_edit_text_transaction">
+
+                    <ImageView
+                        android:id="@+id/aadharYesImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/adhar_yes" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+
+                        android:textAlignment="center"
+                        android:id="@+id/aadharYesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/table_title" />
+
+                    <ImageView
+                        android:id="@+id/aadharNoImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="2dp"
+
+                        android:src="@drawable/adhar_no" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+
+                        android:id="@+id/aadharNoTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/table_title" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dip"
+                android:layout_height="1dip"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#333333">
+
+                    <TextView
+                        android:id="@+id/totalAadharCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+
+                    android:background="@drawable/back_edit_text_transaction">
+
+                    <ImageView
+                        android:id="@+id/totalaadharYesImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="2dp"
+
+                        android:src="@drawable/adhar_yes" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+
+                        android:id="@+id/totalaadharYesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/table_title" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aadharRegLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

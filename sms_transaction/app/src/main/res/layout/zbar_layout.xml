@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/ll_footerX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/button_noBarcode"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:text="Flash"
+            android:onClick="flashLightOn" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

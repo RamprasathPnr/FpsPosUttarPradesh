@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/language"
+        android:title="@string/language">
+
+    </item>
+    <item
+        android:id="@+id/publicUrl"
+        android:title="@string/publicUrl" />
+    <item
+        android:id="@+id/deviceId"
+        android:title="@string/deviceId" />
+    <item
+        android:id="@+id/purgeBill"
+        android:title="Purge"
+        android:actionViewClass="android.widget.Button" />
+
+    <item
+        android:id="@+id/bluetoothPair"
+        android:title="Printer Settings"
+        android:actionViewClass="android.widget.Button" />
+</menu>

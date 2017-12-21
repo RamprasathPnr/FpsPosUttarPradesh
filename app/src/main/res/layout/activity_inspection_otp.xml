@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login_pos">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/actionbar_custom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fpsposapplication"
+        android:textColor="#F57F17"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/officer_login"
+        android:textColor="#6E6E6E"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_otp_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/otp_message"
+        android:textColor="#6E6E6E"
+
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/loginRelativeLayout"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_otp_message"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_text_box"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/user_back_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_key" />
+
+            <EditText
+                android:id="@+id/officer_otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/user_back_key"
+                android:background="@drawable/login_text_box1"
+                android:ems="13"
+                android:hint="@string/otp"
+                android:inputType="number"
+                android:maxLength="7"
+                android:paddingBottom="17dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="17dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/officer_verify_Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordLayout"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_login"
+            android:gravity="center"
+            android:onClick="officerOTP"
+            android:paddingBottom="17dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="17dp"
+            android:text="@string/verify_text"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/officer_verify_Button"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="0 Min"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/resendOtp"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/resend_otp"
+                android:textColor="@color/lightgrey"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

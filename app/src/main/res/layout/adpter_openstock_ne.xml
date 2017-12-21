@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitleAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#777777" />
+
+        <LinearLayout
+            android:id="@+id/commodityBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/entitlementName"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#0288D1"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#777777" />
+
+        <RelativeLayout
+            android:id="@+id/unitEntitlement"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/entitlementUnit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#777777"
+                 />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#777777" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/entitlement_opening"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="10dp"
+                android:paddingRight="40dp"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#777777" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/amount_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|right"
+                android:maxLength="9"
+                android:paddingLeft="10dp"
+                android:paddingRight="40dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#777777" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777" />
+</LinearLayout>

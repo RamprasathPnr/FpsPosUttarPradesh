@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="750dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/close_dialog_border"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/warningImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/warning" />
+
+        <TextView
+            android:id="@+id/tvWaring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/caution"
+            android:textColor="@color/red"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></View>
+
+
+        <TextView
+            android:id="@+id/tvloginBack"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/incorrectDeviceDate"
+            android:textColor="@color/ash"
+            android:textSize="30dp" />
+
+        <!--<TextView
+            android:id="@+id/serverTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextDay"
+            android:textColor="@color/ash"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/deviceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextDay"
+            android:textColor="@color/ash"
+            android:textSize="30dp" />-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<TextView
+            android:id="@+id/tvContinue"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/changeTime"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp"
+        android:padding="1dp">
+
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonYes"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:text="@string/changeDeviceDate"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

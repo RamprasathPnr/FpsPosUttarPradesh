@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#777777"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitleAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/commodityBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#777777"/>
+            <TextView
+                android:id="@+id/sno"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:layout_weight="3.17" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#777777"/>
+
+            <TextView
+                android:id="@+id/newversion"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/unitEntitlement"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#777777"/>
+
+            <TextView
+                android:id="@+id/oldversion"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                 />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:id="@+id/lin">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#777777"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:id="@+id/stat"
+            android:layout_height="fill_parent">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#777777"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#777777"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewmo"
+            >
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/viewmore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColorHint="#c77000"
+                android:text="View"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

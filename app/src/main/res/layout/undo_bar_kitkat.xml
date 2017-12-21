@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.omneagate.UndoBar.UndoBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/undoBar"
+    style="@style/Root.KitKat"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/undo_bar_height_kitkat">
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/Message.KitKat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+</com.omneagate.UndoBar.UndoBarView>

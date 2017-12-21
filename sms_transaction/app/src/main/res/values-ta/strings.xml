@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menuStore">புதுப்பி</string>
+    <string name="menuRetrieve">பழையதை எடு</string>
+    <string name="deviceId">சாதன எண்</string>
+    <string name="publicUrl">விலாசம் மாற்று</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="english">English</string>
+    <string name="sales">தொடர்க</string>
+    <string name="printBill">அச்சிடு</string>
+    <string name="unassociated">சாதனம் எந்த கடையுடனும் சேரவில்லை</string>
+    <string name="loginUserNameEmpty">பயனர் பெயர் இல்லை </string>
+    <string name="changeUrl">முகவரி மாற்றம்</string>
+    <string name="loginPasswordEmpty">கடவுச் சொல் இல்லை</string>
+    <string name="loginUserName">பயனர் பெயர்</string>
+    <string name="noNetworkConnection">இணைய இணைப்பு இல்லை</string>
+    <string name="loginPassword">கடவுச் சொல்</string>
+    <string name="deviceRegistration">சாதனம் பதிவு செய்யப்பட்டுவிட்டது. உதவி மையத்தை தொடர்புகொள்ளவும்</string>
+    <string name="noItemSelected">ஒரு பொருளும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="wrongSelection">சரியான உள்ளீடு கொடுக்கவும்</string>
+    <string name="thresholdLimit">30</string>
+    <string name="cardActivate">அட்டை நாளை செயல்படுத்தப்படும்</string>
+    <string name="exceedsLimit">அனுமதிக்கப்பட்ட அளவை தாண்டிவிட்டது</string>
+    <string name="noUpdateAvailable">மேம்படுத்தப்பட்ட மென்பொருள் உள்ளது</string>
+    <string name="headerAllPage">உணவுப் பொருள் வழங்கல் மற்றும் நுகர்வோர் பாதுகாப்புத் துறை</string>
+    <string name="successInsertion">பில் சேர்ப்பிக்கப்பட்டுவிட்டது</string>
+    <!--  <string name="loginPasswordSize">Password should more than 5 chars</string>-->
+    <string name="loginInvalidUserPassword">தவறான பயனர் பெயர் / கடவுச் சொல்</string>
+
+    <string name="logout">வெளியே செல்</string>
+    <string name="cardActivated">அட்டை செயல்படுத்தப்பட்டுவிட்டது</string>
+    <string name="cardAlreadyActivated">அட்டை ஏற்கனவே செயல்படுத்தப்பட்டுவிட்டது</string>
+    <string name="restoreHead">நினைவகத்தில் இருந்து எடு்</string>
+    <string name="pdsSolution">PDS Solution</string>
+    <string name="titleActivityEntitlement">EntitlementActivity</string>
+    <string name="hashMethod">SHA-256</string>
+    <string name="hashIterations">100000</string>
+    <string name="saltSize">10</string>
+    <string name="rmnExist">Mobile number Exist</string>
+    <string name="invalidMobile">தவறான அலைபேசி எண்..</string>
+    <string name="logoutString">நீங்கள் நிச்சயமாக வெளியேற நினைத்தால் ஆம் பொத்தானை அழுத்தவும் </string>
+    <string name="oldRationNull">பழைய குடும்ப அட்டை எண்ணை உள்ளிடவும்</string>
+    <string name="rmnNull">அழைபேசி எண்ணை உள்ளிடவும்</string>
+    <string name="cylinderNull">சிலிண்டர் எண்ணிக்கையை உள்ளிடவும்</string>
+    <string name="poolSize">4</string>
+    <string name="ok">ஆம் </string>
+    <string name="cancel">ரத்து செய்</string>
+    <string name="submit">சமர்பி</string>
+    <string name="rMN">அலைபேசி எண்</string>
+    <string name="login">Login</string>
+    <string name="scanQR"> க்யூஆர் ஓடிபி இல்லாமல்</string>
+    <string name="customers">வாடிக்கையாளர் விவரம்</string>
+
+    <string name="mobileOTP">மொபைல் ஓடிபி</string>
+    <string name="inputOTP">ஓடிபி உள்ளீடு </string>
+    <string name="inputCard">அட்டை எண்</string>
+    <string name="mobileOTPWrong">மொபைல் ஓடிபி உள்ளீடு தவறு</string>
+    <string name="retryCount">முயற்சி எண்ணிக்கையை தாண்டிவிட்டீர்கள்</string>
+    <string name="rMobileOTP">Mobile OTP </string>
+    <string name="OTPDialog">மொபைல் ஓடிபி</string>
+    <string name="scanWithOutOTP">க்யூஆர் ஓடிபியுடன்</string>
+    <string name="beneficiaryData">பயனாளர் மாற்றம்</string>
+    <string name="headFamily">குடும்ப தலைவர்</string>
+    <string name="total">மொத்தம்</string>
+
+    <string name="beneficiaryActivate">பயனாளர் அட்டை செயல்படுத்தும் விவரம்</string>
+    <string name="ufcCode">குடும்ப அட்டை எண்</string>
+    <string name="numberOfProducts">பொருட்களின் எண்ணிக்கை</string>
+    <string name="address">விலாசம்</string>
+    <string name="totalAmount">மொத்த விலை</string>
+    <string name="edit">திருத்து</string>
+    <string name="password">Password</string>
+    <string name="rMobile">Registered Mobile </string>
+    <string name="semis">:</string>
+    <string name="availed">வாங்குவது</string>
+    <string name="product">பொருள்</string>
+    <string name="price">விலை</string>
+    <string name="entitled">ஒதுக்கீடு</string>
+    <string name="com.omneAgate">Powered By OMNE AGATE</string>
+    <string name="titleActivitySalesSubmission">SalesSummaryActivity</string>
+    <string name="title_activity_beneficiary_activation">BeneficiaryActivationActivity</string>
+    <string name="dbExported">தரவுத்தளம் வெற்றிகரமாக மெமரி கார்டில்  ஏற்றுமதி செய்யப்பட்டுள்ளது.</string>
+    <string name="noOfCylinderTitle">சிலிண்டர் எண்ணிக்கை</string>
+    <string name="cylindersAvail">சிலிண்டர் </string>
+    <string name="oldFamilyCard">பழைய குடும்ப அட்டை எண்</string>
+    <string name="oldFamilyCardHint">Old Family Card Number</string>
+    <string name="cylinderHint">Number of Cylinders</string>
+    <string name="cardTypes">அட்டை பிரிவு</string>
+    <string name="userName">பயனர் பெயர்</string>
+    <string name="loginId">Login Id</string>
+    <string name="currentStock">கையிருப்பு</string>
+    <string name="stockCheck">கையிருப்பு</string>
+    <string name="loginButton">உள்நுழை</string>
+    <string name="inCorrectUnamePword">  தவறான பயனர் பெயர் அல்லது கடவுச்சொல்</string>
+
+    <string name="connectionRefused">இணைப்பு ஏற்படுத்த இயலவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="connectionError">இணைப்பு ஏற்படுத்த இயலவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+
+    <string name="serviceNotAvailable">இணைப்பு இல்லை. மீண்டும் முயற்சி செய்யவும்</string>
+
+    <string name="fpsBeneficiaryMismatch">இந்த குடும்ப அட்டை இந்த கடையை சார்ந்தது இல்லை</string>
+    <string name="beneficiaryExceededAllotment">பயனாளர் பொருள் அளவு குறைவாக உள்ளது</string>
+
+    <string name="ackStatus">ஒப்புகை நிலை</string>
+    <string name="quantity">அளவு</string>
+    <string name="receivedQuantity">பெற்ற அளவு</string>
+    <string name="stockNotAvailable">பொருட்கள் தேவையான அளவு இல்லை</string>
+    <string name="stockNotAvailableProduct"> தேவையான அளவு கைஇருப்பு இல்லை</string>
+    <string name="BeneficiaryMembersNotFount">பயனாளர் குடும்ப விவரங்கள் இல்லை</string>
+    <string name="cardBlocked">அட்டை உபயோகத்தில் இல்லை. உதவி மையத்தை அணுகவும்</string>
+
+    <string name="retrieveDbString">நீங்கள் நினைவகத்தில் இருந்து பழைய கோப்புகளை எடுக்க விரும்பினால் ஆம் பொத்தானை அழுத்தவும்</string>
+    <string name="restorationDbString">நீங்கள் மெமரி கார்டில் இருந்து தரவுதளத்தை திரும்ப மாற்ற விரும்புகிறீர்களா ? </string>
+    <string name="backupDb">Backup</string>
+    <string name="defaultError">Default Error</string>
+    <string name="FpsStockInward">சரக்கு வருகை</string>
+    <string name="serverUpdated">தேவையான பொருட்களுக்கு கோரிக்கை விடுக்கப்பட்டது</string>
+    <string name="fpsIntentRequest">பொருள் தேவை</string>
+
+    <!--Commodity Transaction at POS current date-->
+
+
+    <string name="stockInwardResponseTitle">பொருள் பெறுதல்</string>
+    <string name="messageStockInwardupdate">பொருட்கள் பெறப்பட்டதற்கான அத்தாட்சி பதிவு செய்யப்பட்டது</string>
+    <!--Fbs stock inward -->
+    <string name="chellanId">சலான் எண்</string>
+    <string name="outwardDate">வருகை நாள்</string>
+    <string name="action">செயல்</string>
+    <string name="receivedQuantityHigh">பெற்ற பொருட்கள் அளவை சரியாக கொடுக்கவும்</string>
+    <string name="itemZero">பொருட்கள் அளவை கொடுக்கவும்</string>
+    <string name="itemHigh">பெற்ற பொருட்கள் அளவை கொடுக்கவும்</string>
+    <string name="FPSSTOCKINWARD">FPS STOCK INWARD</string>
+    <string name="viewString">பார்க்க</string>
+    <string name="ackDate">ஒப்புகை நாள்</string>
+    <string name="batchNumber">வருகை எண்</string>
+
+    <!--Fbs stock inward  Detail-->
+    <string name="fpsInvardDetailProductName">பொருள்</string>
+    <string name="fpsInvardDetailQuantity">அளவு</string>
+    <string name="fpsInWardDetailReceivedQuantity">பெற்ற அளவு</string>
+    <string name="AcknowledgementStatus">ஒப்புகை நிலை</string>
+    <string name="fpsIDSubmit">சமர்பி</string>
+    <string name="fpsIDCancel">வேண்டாம்</string>
+    <string name="FIDChellanIdLabel">சாலன் எண்</string>
+    <string name="FIDAckDateLabel">ஒப்புகை தேதி</string>
+    <string name="FIDBatchNoLabel">பாட்ச் எண்</string>
+    <string name="FPSSTOCKINWARDDETAILS">கையிருப்பு உள்வரவு  விவரங்கள்</string>
+    <string name="stockUpdation">கையிருப்பு சர்வரில் மேம்படுத்தப்பட்டுவிட்டது</string>
+    <string name="noRecords">எந்த விவரமும் இல்லை</string>
+    <string name="beneficiaryInvalid">அட்டை முடக்கப்பட்டுள்ளது</string>
+    <string name="deviceInvalid">சாதனம் முடக்கப்பட்டுள்ளது</string>
+    <string name="genericDatabaseError">தரவுத்தள பிழை</string>
+    <string name="missingParameter">சில விவரங்கள் இல்லை</string>
+    <string name="cardNotPresent">அட்டை இல்லை</string>
+    <string name="fpsStoreInvalid">கடை முடக்கப்பட்டுள்ளது</string>
+    <string name="messageStockManualInwardupdate">கையிருப்பு மேம்படுத்தப்பட்டுவிட்டது</string>
+    <string name="selectGodown">கிடங்கை தெறிந்தெடு</string>
+    <string name="challanNoGreaterZero">சலான் எண்  பூஜ்ஜியத்தை விட பெரிதாக இருக்க வேண்டும்.</string>
+    <string name="enterChellanNo">சலான் எண் கொடுக்கவும்</string>
+    <string name="challanNo">சலான்  எண் </string>
+    <string name="stockInwardManual">கையிருப்பு உள்வரவு மெநுவல்</string>
+    <string name="enterFirstLetterOfGodown">கிடங்கின் முதல் எழுத்தை கொடுக்கவும்</string>
+    <string name="godownNameIncorrect">சரியான கிடங்கின் பெயரை கொடுக்கவும  </string>
+
+
+    <!--Stock Adjustment-->
+    <string name="fpsStockAdjustmentProductName">பொருள்</string>
+    <string name="fpsStockAdjustmentcurrentStock">இருப்பு நிலை</string>
+    <string name="fpsStockAdjustmentQuantity">சமன் செய் அளவு </string>
+    <string name="fpsStockAdjustmentOperation">சமன் செய் அளவீடு</string>
+    <string name="stockAdjustment">சமன் செய்யவேண்டிய இருப்பு </string>
+    <string name="enterAdjustQuantity">சமன் செய்யவேண்டிய அளவை உள்ளிடவும் </string>
+    <string name="stockAdjustmentTitle">சமன் செய்யவேண்டிய இருப்பு </string>
+    <string name="messageAdjustUpdated">இருப்பு வெற்றிகரமாக சமன்செய்யப்பட்டது</string>
+
+
+    <!-- Auto Upgrade Version -->
+    <string name="autoUpgrade">மேம்படுத்துதல்</string>
+    <string name="downloadgingFile">பதிவிறக்கப்படுகிறது ...</string>
+
+    <!--Fps Intent Request Product-->
+    <string name="FPSINTENTREQUEST"> FPS Intent Request Product</string>
+    <string name="fpsProductIntentRequest">பொருள் தேவை</string>
+    <string name="quantityNeed">அளவு </string>
+
+
+    <string name="billDetails">பில் விவரம்</string>
+    <string name="billDetailSerialNo">இல்லை</string>
+    <string name="billDetailProductName">பொருள்</string>
+    <!--View Bill -->
+    <string name="fpsViewBill">பில் பார்வை</string>
+    <string name="title_activity_fps_view_bill">பில் சுருக்கம்</string>
+    <string name="billViewSerialNo">இல்லை</string>
+    <string name="billViewBillNo">பில்</string>
+    <string name="billViewDate">தேதி</string>
+    <string name="billViewUfc">அட்டை எண்</string>
+    <string name="billViewStatus">நிலை</string>
+    <string name="billDetailAmountLabel">பரிவர்த்தனை தேதி</string>
+    <string name="title_activity_bill_Detail">பில் விவரம்</string>
+    <string name="billDetailDateLabel">தேதி</string>
+    <string name="billDetailQuantity"> அளவு</string>
+    <string name="billDetailProductPrice">விலை</string>
+    <string name="rs">\u20A8</string>
+    <string name="billDetailTotalLabel">மொத்தம்</string>
+    <string name="billDetailUfcLabel">அட்டை எண்</string>
+    <string name="billDetailTxnBill">பரிவர்த்தனை எண்</string>
+    <string name="billDetailAddressLabel">விலாசம்</string>
+    <string name="billDetailFamilyHeadOfTheFamilyLabel">குடும்ப தலைவர்</string>
+    <string name="billDetailFamilyMembersLabel">குடும்ப உறுப்பினர்</string>
+    <string name="productTransaction">பொருள்</string>
+    <string name="openBalance">ஆரம்ப அளவு</string>
+    <string name="closingBalance">கடைசி அளவு</string>
+    <string name="amountProduct">விலை</string>
+    <string name="externalStorageWritable">மெமரி கார்டில் எழுத இயலாது</string>
+    <string name="externalStorageNotAvailable">மெமரி கார்ட் இல்லை</string>
+    <string name="externalStorageNotWritable">மெமரி கார்டில் எழுத இயலாது</string>
+    <string name="noFreeInSdcard">மெமரி கார்டில் இடம் இல்லை</string>
+    <string name="dbImported">தரவுதளம் ஏற்றப்பட்டுவிட்டது</string>
+    <string name="noFileSdcard">மெமரி கார்டில் பாக்அப கோப்பு இல்லை</string>
+    <string name="oldDbBackup">தரவுதளம் பாக்அப் கோப்புக்கு நகல் எடுக்கப்பட்டுவிட்டது</string>
+    <string name="backupFolderNot"> பாக்அப் கோப்பு உருவாக்க இயலவில்லை</string>
+    <string name="invalidUpdateStockRequest">தவறான கையிருப்பு மேம்படுத்துதல் கோரிக்கை</string>
+    <string name="fpsStockNotAvailable">தவறான கையிருப்பு மேம்படுத்துதல் கோரிக்கை</string>
+    <string name="nonAdminUser">தவறான கோரிக்கை. உங்களுக்கு உள்நுழைய அனுமதி இல்லை</string>
+    <string name="soldQuantity">விற்றது</string>
+    <string name="purgBill">பில் நீக்கு</string>
+    <string name="noOfDaysBefore">மொத்த நாட்கள்</string>
+    <string name="purgeBillBItem">நீக்கிய பில்</string>
+    <string name="noOfDaysLabel">மொத்த நாட்கள்:</string>
+
+    <string name="app_name">FPS</string>
+    <string name="language">Language</string>
+    <string name="loadLocalDB">Load Local DB</string>
+    <string name="titleActivityMain">ScanActivity</string>
+    <string name="numberCylinder">No Of Cylinder</string>
+    <string name="loadLocal">LOAD LOCAL DB</string>
+
+    <string name="text_bluetooth_off">Bluetooth is Off</string>
+    <string name="text_bluetooth_on">Bluetooth is On</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_disconnect">Diconnect</string>
+    <string name="text_enable_bluetooth">Enable Bluetooth</string>
+    <string name="text_disable_bluetooth">Disable Bluetooth</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+    <string name="text_list_paired_devices">Paired Devices</string>
+    <string name="text_list_devices">List of Devices</string>
+    <string name="text_pair">Pair</string>
+    <string name="text_print_demo">Print Demo</string>
+    <string name="text_print_receipt">Print Receipt</string>
+    <string name="text_print_text">Print Text</string>-->
+
+
+    <string name="restoration">Restore FPS DB</string>
+    <string name="retrieve">Retrieve FPS DB</string>
+    <string name="CommodityTransaction">Transaction Commodity</string>
+
+    <string name="inOutBalance">கடைசி விற்பனை</string>
+    <string name="cardTypeTitle">Choose Card Type</string>
+    <string name="accessDenied">Access Denied</string>
+    <string name="passwordMismatch">Password Mismatch</string>
+    <string name="inputError">Input Error</string>
+    <string name="invalidParameter">Invalid Parameter</string>
+    <string name="invalidParameterFormat">Invalid Parameter Format</string>
+    <string name="title_activity_transaction_commodity">TransactionCommodity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_qr_code_with_otp">QrCodeWithOTPActivity</string>
+    <string name="title_activity_fps_stock">FpsStockActivity</string>
+    <string name="title_activity_fps_stock_inward_detail">FpsStockInwardDetailActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_fps_intent_request">FpsIntentRequestActivity</string>
+    <string name="title_activity_circular_progress_bar">CircularProgressBarActivity</string>
+    <string name="title_activity_customized_progress_bar">CustomizedProgressBarActivity</string>
+    <string name="title_activity_success_failure">SuccessFailureActivity</string>
+
+    <string-array name="cylindersList">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="adjustmentSpinner">
+        <item>அதிகரி</item>
+        <item>குறை</item>
+    </string-array>
+</resources>

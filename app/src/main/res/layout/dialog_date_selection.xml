@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_border"
+    android:orientation="vertical">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:mcv_arrowColor="?attr/colorPrimary"
+        app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+        app:mcv_firstDayOfWeek="monday"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_monthLabels="@array/custom_months"
+        app:mcv_selectionColor="@color/pages_top_head"
+        app:mcv_showOtherDates="false"
+        app:mcv_tileSize="49dp"
+        app:mcv_weekDayLabels="@array/custom_weekdays"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/login_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonNwCancel"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_change"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/login_background" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/buttonNwOk"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_change"
+            android:text="@string/ok"
+            android:textColor="@drawable/button_text_color" />
+    </LinearLayout>
+</LinearLayout>

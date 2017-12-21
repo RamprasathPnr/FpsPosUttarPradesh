@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DateTimeDialog"
+    android:layout_width="750dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_border">
+
+    <LinearLayout
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+
+            android:id="@+id/month_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+
+            <Button
+                android:id="@+id/month_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/icon_plus" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_ground_otp_register1">
+                <EditText
+                    android:id="@+id/month_display"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+
+                    android:padding="1dp"
+
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="#444444"
+                    android:textSize="33dp"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/month_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/minus_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/date_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/icon_plus" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_ground_otp_register1">
+                <EditText
+                    android:id="@+id/date_display"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+
+                    android:padding="1dp"
+                    android:focusable="false"
+                    android:background="#00000000"
+                    android:digits="0123456789"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:singleLine="true"
+
+                    android:textColor="#444444"
+                    android:textSize="33dp"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/date_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/minus_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/year_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/year_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/icon_plus"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_ground_otp_register1">
+
+
+                <EditText
+                    android:id="@+id/year_display"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+
+                    android:padding="1dp"
+                    android:focusable="false"
+                    android:background="#00000000"
+                    android:digits="0123456789"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="#444444"
+                    android:textSize="33dp"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/year_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/minus_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hour_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/hour_plus"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:background="@drawable/image_button_up" />
+
+            <EditText
+                android:id="@+id/hour_display"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:background="@drawable/picker_middle"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#C0C0C0" >
+            </EditText>
+
+            <Button
+                android:id="@+id/hour_minus"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:background="@drawable/image_button_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/min_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/min_plus"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:background="@drawable/image_button_up" />
+
+            <EditText
+                android:id="@+id/min_display"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:background="@drawable/picker_middle"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#C0C0C0" />
+
+            <Button
+                android:id="@+id/min_minus"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:background="@drawable/image_button_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+
+
+        app:mcv_arrowColor="?attr/colorPrimary"
+        app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+        app:mcv_firstDayOfWeek="monday"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_monthLabels="@array/custom_months"
+        app:mcv_selectionColor="@color/pages_top_head"
+        app:mcv_showOtherDates="false"
+
+        app:mcv_tileSize="49dp"
+        app:mcv_weekDayLabels="@array/custom_weekdays"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewDate"
+        android:layout_below="@+id/dateView"
+        android:background="@color/login_background" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewDate"
+android:id="@+id/btnLay"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/CancelDialog"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_change"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/login_background" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/SetDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_change"
+            android:text="@string/ok"
+            android:textColor="@drawable/button_text_color" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btnLay"
+        android:background="@color/login_background" />
+
+</RelativeLayout>

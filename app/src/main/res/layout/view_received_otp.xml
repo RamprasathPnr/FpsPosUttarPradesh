@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/back_data_otp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/enterOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp"
+                android:textColor="#fe7931"
+                android:textSize="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enterOtp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_background_mobile"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/mobileNumberOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="#fe7931"
+                    android:textSize="30dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/invalidMobileNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_otp"
+                android:layout_marginTop="20dp"
+                android:textColor="#f72121"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/clear_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_one"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="1"
+                        
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_two"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_three"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:paddingBottom="10dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_four"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_five"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_six"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:paddingBottom="10dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_seven"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_eight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_nine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_zero"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/sale_dialog">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/button_bkSp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_backspace" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="#01abb6">
+
+                    <Button                         android:textAllCaps="false"
+                        android:id="@+id/buttonNeedOTP"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_tick" />
+
+                </RelativeLayout>
+
+
+            </GridLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

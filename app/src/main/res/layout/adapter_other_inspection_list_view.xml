@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txt_shopcode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_code"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_shopcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/txt_shopcode_label"
+        android:text="5623"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_remarks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_shopcode"
+        android:singleLine="true"
+        android:text="@string/remarks"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_shopcode"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_remarks_label"
+        android:maxLength="255"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_remarks"
+        android:layout_marginTop="10dp"
+        android:background="#777777"/>
+</RelativeLayout>

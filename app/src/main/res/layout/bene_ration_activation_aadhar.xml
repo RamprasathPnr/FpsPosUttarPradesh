@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:id="@+id/bill_layout_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/acknowledgeRelativeLayout"
+            android:visibility="visible"
+            android:layout_width="650dp"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/aadharSkipAcknowledge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/custom_checkbox_aadhar"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/aadharSkip"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/aadharSkipAcknowledge"
+                android:textColor="#777777"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="20dp"
+            android:background="#777777" />-->
+
+        <LinearLayout
+            android:id="@+id/aadharNoLay"
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ration_card_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#777777"
+                android:textSize="23sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/aadharNumberLayout"
+                android:layout_width="500dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_ground_otp_register1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/firstText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:nextFocusDown="@+id/thirdText"
+                        android:singleLine="true"
+                        android:textColor="#444444"
+                        android:textSize="33dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#777777" />
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/secondText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:nextFocusDown="@+id/thirdText"
+                        android:singleLine="true"
+                        android:textColor="#444444"
+                        android:textSize="33dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#777777" />
+
+
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/thirdText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:nextFocusDown="@+id/thirdText"
+                        android:singleLine="true"
+                        android:textColor="#444444"
+                        android:textSize="33dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scanAadhar"
+                android:layout_toRightOf="@id/aadharNumberLayout"
+                android:src="@drawable/img_qr_code"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/cancel_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/submit_button"
+                android:background="#dd0632"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/submit_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#029555"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/key_board_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/edit_card_registartion"
+        android:padding="10dp">
+
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/customkeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:keyBackground="@color/keyboard_key"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!--<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cameraPreview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+</RelativeLayout>

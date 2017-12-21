@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutEntitles"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/totalBackgroundEntitlement"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/commodityBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.omneagate.Util.SquareLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imageEntitlement"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+            </com.omneagate.Util.SquareLayout>
+
+            <TextView
+                android:id="@+id/entitlementName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/unitEntitlement"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/entitlementUnit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/login_background"
+                 />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/entitlementEntitled"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/login_background"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/entitlementPurchased"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/login_background"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/entitlementAvailed"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/login_background"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edittextValues"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!-- <TextView
+                 android:id="@+id/amountOfSelection"
+                 android:layout_width="fill_parent"
+                 android:layout_height="45dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="5dp"
+                 android:background="#ccffffff"
+                 android:editable="false"
+                 android:ems="15"
+                 android:gravity="right|center_vertical"
+                 android:maxLength="6"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 android:singleLine="true"
+                 android:textSize="23sp" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="580dip"
+    android:layout_height="520sp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/reldata"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp">
+
+            <TextView
+                android:id="@+id/alerttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20sp"
+                android:singleLine="true"
+                android:text="DeviceList"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reldata"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"></ListView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

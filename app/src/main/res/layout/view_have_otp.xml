@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/enterOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="ENTER OTP"
+            android:textColor="#FF8500"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/otpEntered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/enterOtp"
+            android:background="@drawable/edit_text_background"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="7"
+            android:numeric="integer"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#FF8500"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <Button
+        android:textAllCaps="false"
+
+        android:id="@+id/buttonNeedOTP"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="15dp"
+        android:background="#02AAB5"
+        android:padding="15dp"
+        android:text="   Continue  "
+        android:textColor="@color/white" />
+</RelativeLayout>

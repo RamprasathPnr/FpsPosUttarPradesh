@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3482EA">
+
+            <TextView
+                android:id="@+id/txtRequest"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:text="@string/request"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtProduct"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:textColor="#9E9E9E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:id="@+id/category_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat">
+
+                <EditText
+                    android:id="@+id/editTextQuantity"
+                    android:layout_width="490dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/no_editable_edittext"
+                    android:digits="1234567890"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="50"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="#808080"
+                    android:textSize="20dp" />
+
+              <!--  <Spinner
+                    android:id="@+id/quantitySpinner"
+                    android:layout_width="500dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/login_text_box" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_drop_down" />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btResendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:text="@string/resend_otp"
+                android:background="@drawable/background_orange"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:text="@string/cancelCaps"
+                android:textColor="@color/white"
+                android:background="@drawable/grey_background"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:text="@string/submitCaps"
+                android:textColor="@color/white"
+                android:background="@drawable/green_background"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,375 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/select_ration_card_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/select_ration_card_number"
+                android:textColor="#777777"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_ground_card_register1">
+
+                <ListView
+                    android:id="@+id/listView_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#ecf9ff"
+                    android:divider="#777777"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#efefef"
+                    android:padding="1dp" />
+
+                <TextView
+                    android:id="@+id/noRecordsFound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_num_search"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#777777"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="@drawable/back_ground_card_register1"
+                android:orientation="horizontal">
+
+                <!--<LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent">
+
+                    <EditText
+                        android:id="@+id/firstText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:ems="2"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:nextFocusDown="@+id/secondText"
+                        android:singleLine="true"
+                        android:text="XX"
+                        android:textColor="#777777"
+                        android:textSize="33dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#777777" />
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="fill_parent">
+
+                    <EditText
+                        android:id="@+id/secondText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:ems="1"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="1"
+                        android:nextFocusDown="@+id/thirdText"
+                        android:singleLine="true"
+                        android:text="X"
+                        android:textColor="#777777"
+                        android:textSize="33dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#777777" />-->
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:ems="3"
+                        android:gravity="left"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="XXXXXXXX"
+                        android:textColor="#777777"
+                        android:textScaleX="1.3"
+                        android:textSize="33dp" />
+
+                    <TextView
+                        android:id="@+id/thirdText"
+                        android:text=""
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:ems="4"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColor="#777777"
+                        android:textScaleX="1.3"
+                        android:textSize="33dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="65dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_one"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_two"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/button_three"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:paddingBottom="10dp">
+
+                    <Button
+                        android:id="@+id/button_four"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/button_five"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/button_six"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:paddingBottom="10dp">
+
+                    <Button
+                        android:id="@+id/button_seven"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/button_eight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/button_nine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="55dp"
+                    android:layout_columnSpan="2">
+
+                    <Button
+                        android:id="@+id/button_zero"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/sale_dialog">
+
+                    <Button
+                        android:id="@+id/button_bkSp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_backspace" />
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

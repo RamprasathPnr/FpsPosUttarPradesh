@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#07C8ff"
+                android:layout_height="60dp"
+                android:id="@+id/fpsIntentRequestLinearLayout">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/fRILabel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="#"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/fpsInvardDetailProductLabel"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="@string/fpsInvardDetailProductName"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/fpsInvardDetailQuantityLabel"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="@string/fpsInvardDetailQuantity"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/listView_fps_intent_request_product"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/fpsIntentRequestLinearLayout">
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fpsIDSubmit"
+                android:id="@+id/btnfpsIDSubmit"
+                android:onClick="onSubmit"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_login"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/listView_fps_intent_request_product"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <!--android:layout_alignLeft="@+id/listView_fps_intent_request_product"
+            android:layout_below="@+id/listView_fps_intent_request_product"
+            android:layout_marginLeft="100dp"
+        -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fpsIDCancel"
+                android:id="@+id/btnfpsIDCancel"
+                android:background="@drawable/button_login"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/listView_fps_intent_request_product"
+                android:onClick="onCancel"
+                android:layout_toRightOf="@+id/btnfpsIDSubmit" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

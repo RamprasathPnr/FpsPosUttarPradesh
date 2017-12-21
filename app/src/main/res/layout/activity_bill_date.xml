@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/unsyncCount"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#DDDDDD"
+        android:layout_below="@+id/topLayout">
+
+        <TextView
+            android:id="@+id/unSyncBillCount"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="dsfsdf"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/icon_bill"
+            android:layout_toRightOf="@+id/unSyncBillCount"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/reg_date_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress_bar_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/unsyncCount"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fpsInvardlinearLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/fpsInvardchellanIdLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="#"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fpsInvardactionLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:text="Transaction Id"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fpsInvardoutwardDateLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:text="Ration Card No"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="57dp">
+
+                <TextView
+                    android:id="@+id/fpsInvardoutwardGodownNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="Amount(\u20B9)"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="57dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/fpsInvardlinearLayoutTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1">
+          <!--  <ScrollView
+                style="@style/scrollbar_shape_style"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/listView_fps_bill"
+                android:fadeScrollbars="false"
+                android:fillViewport="false">
+
+                <LinearLayout
+                    android:id="@+id/listView_linearLayout_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>-->
+
+            <com.omneagate.Util.PullToRefresh.LoadMoreListView
+                android:id="@+id/listView_fps_stock_inward"
+                style="@style/scrollbar_shape_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#777777"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutNoRecords"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/tvNoRecords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_records"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp">
+             <View
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="13dp"
+                 android:layout_marginBottom="5dp"
+                 android:background="@drawable/all_unsync_bill"/>
+            <TextView
+                android:id="@+id/tvViewStockHistory"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="13dp"
+                android:textColor="#555555"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="13dp"
+                android:background="#1087BE"
+                android:onClick="onClose"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

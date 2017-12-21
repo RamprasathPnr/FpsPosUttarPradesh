@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FPS</string>
+    <string name="language">भाषा</string>
+    <string name="publicUrl">परिवर्तन  पता </string>
+    <string name="device_details">उपकरण विवरण</string>
+    <string name="inactiveDevice">उपकरण निष्क्रिय है</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="scanned_already">पहले से स्कैन किए गए</string>
+    <string name="correction_history_tv">भंडार समायोजन</string>
+    <string name="stock_adjust_list_history">भंडार समायोजन इतिहास</string>
+    <string name="languageSelection">Select Language</string>
+    <string name="aadharNumberZero">आधार नंबर 0 के साथ शुरू नहीं करना चाहिए</string>
+    <string name="aadharNumberOne">आधार नंबर 1 के साथ शुरू नहीं करना चाहिए</string>
+    <string name="mobileNumberZero">मोबाइल नंबर 0 के साथ शुरू नहीं करना चाहिए</string>
+    <string name="languageSelectionTa">மொழித் தேர்வு</string>
+    <string name="languageSelectionHi">भाषा चुनिए</string>
+    <string name="menuStore">पुनर्स्थापित</string>
+    <string name="menuRetrieve">बैकअप</string>
+    <string name="number_cylinder">सिलेंडर</string>
+    <string name="number_adult">वयस्क</string>
+    <string name="number_children">बच्चे</string>
+    <string name="loadLocalDB">स्थानीय लोड डेटाबेस</string>
+    <string name="english">English</string>
+    <string name="hr">समय</string>
+    <string name="hrs">घंटे</string>
+    <string name="min">मिनट</string>
+    <string name="mins">मिनटों</string>
+    <string name="day">दिन</string>
+    <string name="days">दिन</string>
+    <string name="transit">परिवर्तन</string>
+    <string name="accepted">मंजूर की</string>
+    <string name="sales">जारी रहना</string>
+    <string name="syncButton">तैयार</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="card_activation">सक्रियण</string>
+    <string name="card_registration">कार्ड पंजीकरण</string>
+    <string name="card_registration_confirm">कार्ड पंजीकरण</string>
+    <string name="check_details">कार्ड धारक के विवरण की जांच</string>
+    <string name="stock_management">भंडार प्रबंधन</string>
+    <string name="transactions">लेन-देन</string>
+    <string name="total_bill">कुल बिल</string>
+    <string name="totAmount">कुल रकम</string>
+    <string name="updateRationCard">मोबाइल / आधार एंट्री</string>
+    <string name="aadhar_mobile_success">मोबाइल नंबर और आधार कार्ड के साथ जोड़ दिया गया है</string>
+    <string name="beneficiary_name">लाभार्थी का नाम</string>
+    <string name="name">नाम</string>
+    <string name="relationship">संबंध</string>
+    <string name="aadhar_number">आधार नंबर</string>
+    <string name="openstock_name">खुले भंडार नाम</string>
+    <string name="card_activation_success">राशन कार्ड सफलतापूर्वक सक्रिय</string>
+    <string name="ration_card_number">कार्ड नंबर</string>
+    <string name="normal_ration_card_number">राशन कार्ड नंबर</string>
+    <string name="invalid_card_prefix">सही जिले कोड दर्ज</string>
+    <string name="card_number_input">पिछले 4 अंकों दर्ज </string>
+    <string name="mob_number">मोबाइल नंबर</string>
+    <string name="aRegisterNo">ए-नंबर रजिस्टर</string>
+    <string name="card_activation_failed">कार्ड सक्रियण विफल.कृपया पुन  प्रयास करें</string>
+    <string name="last_login">अंतिम लॉगइन :</string>
+    <string name="fps_profile">दुकान प्रोफ़ाइल</string>
+    <string name="user_name">उपयोगकर्ता नाम : </string>
+    <string name="enter_otp_here">यहाँ ओ.टी.पी. दर्ज</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+    <string name="captured_image">छवि</string>
+    <string name="fps_code">दुकान कोड</string>
+    <string name="sales_order">बिक्री ऑर्डर</string>
+    <string name="sales_top_heading">बिक्री</string>
+    <string name="mobile_otp">मोबाइल ओ.टी.पी.</string>
+    <string name="success_activation">कार्ड सक्रियण स्थिति</string>
+    <string name="success_status">सफलता / असफलता स्थिति</string>
+    <string name="sale_entry_activity">बिक्री ऑर्डर - एंट्री</string>
+    <string name="card_user_details">कार्ड के विवरण</string>
+    <string name="sale_confirm_activity">बिक्री ऑर्डर - की पुष्टि</string>
+    <string name="full_entitlements">पूर्ण हकदारी</string>
+    <string name="commodity">वस्तु</string>
+    <string name="entitled_qty">हकदार मात्रा.</string>
+    <string name="purchased_qty">खरीदी मात्रा</string>
+    <string name="availed_qty">उपलब्ध.मात्रा</string>
+    <string name="qty_to_bill">मात्रा.बिल</string>
+    <string name="request_otp">अनुरोध ओ.टी.पी.</string>
+    <string name="qr_based">QR कोड आधारित</string>
+    <string name="otp_based">ओ.टी.पी. आधारित</string>
+    <string name="ration_based">राशन कार्ड आधारित</string>
+    <string name="aadhar_based">आधार कार्ड आधारित</string>
+    <string name="biometric_based">बायोमेट्रिक आधारित</string>
+    <string name="full">पूर्ण</string>
+    <string name="printBill">छाप</string>
+    <string name="rate">मूल्यांकन करें(\u20B9)</string>
+    <string name="purge">शुद्ध करना</string>
+    <string name="printerSettings">प्रिंटर सेटिंग</string>
+    <string name="stock_not_available">इस वस्तु के लिए भंडार खत्म हो गया है</string>
+    <string name="internalError">आंतरिक गलती</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="caution">सावधान</string>
+    <string name="monthly_sales_summary">बिक्री सारांश</string>
+    <string name="bfd">बेस्ट फिंगर जांच</string>
+    <string name="bfd_already_done">BFD पंजीकृत</string>
+    <string name="bfd_not_done">BFD पंजीकृत नहीं</string>
+    <string name="reg_aadhar_numbers">पंजीकृत आधार नंबर</string>
+    <string name="search">खोज</string>
+    <string name="timeDiff">सर्वर और उपकरण के बीच समय का अंतर है </string>
+    <string name="nextDay">अगले दिन</string>
+    <string name="location">स्थान</string>
+    <string name="warning">चेतावनी</string>
+    <string name="stock_adjust_alert_msg">भंडार समायोजन बनाई गई हैं</string>
+    <string name="store_type">स्टोर के प्रकार</string>
+    <string name="adjustment_type">समायोजन के प्रकार</string>
+    <string name="inward_register">भंडार आवक रजिस्टर</string>
+    <string name="inward_list">भंडार आवक सूची</string>
+    <string name="working_hours">काम करने के घंटे</string>
+    <string name="invalid_qr">अमान्य QR कोड</string>
+    <string name="qr_exists">QR संहिता मौजूद नहीं है</string>
+    <string name="date_validation">तिथि से आज तक की तुलना में अधिक है</string>
+    <string name="mobile_exists">मोबाइल नंबर मौजूद नहीं है</string>
+    <string name="ration_exists">राशन कार्ड के नंबर मौजूद नहीं है</string>
+    <string name="ration_empty">दर्ज राशन कार्ड नंबर</string>
+    <string name="sim_number">सिम नंबर</string>
+    <string name="agency_name">एजेंसी का नाम</string>
+    <string name="stock_decrement">घटती</string>
+    <string name="invalid_ration">अवैध राशन कार्ड नंबर</string>
+    <string name="continues">क्या आप जारी रखना चाहते हैं ?</string>
+    <string name="fencing_message">उपकरण स्टोर सीमा के भीतर काम करता है</string>
+    <string name="invalidRegNo">अमान्य A पंजीकरण नंबर</string>
+    <string name="notExistsRegNo">A पंजीकरण नंबर नहीं मौजूद है</string>
+    <string name="emptyRegNo">A पंजीकरण नंबर खाली है</string>
+    <string name="reg_no_exists">A पंजीकरण नंबर पहले से मौजूद है</string>
+    <string name="ration_card_exists">राशन कार्ड नंबर पहले से ही मौजूद है</string>
+    <string name="deviceId">उपकरण</string>
+    <string name="beneficiary_blocked">आपका कार्ड अवरुद्ध कर दिया गया है</string>
+    <string name="stock_adjust">भंडार समायोजन</string>
+    <string name="all_aadhar_registered">सभी लाभार्थियों के लिए आधार नंबर पंजीकृत</string>
+    <string name="invalidMobile">अमान्य मोबाइल नंबर</string>
+    <string name="mobile_already_exists">मोबाइल नंबर पहले से ही मौजूद है</string>
+    <string name="loginPasswordEmpty">पासवर्ड खाली नहीं होना चाहिए</string>
+    <string name="headerAllPageEnglish">Food and Civil Supplies Department, Telangana.</string>
+    <string name="headerAllPage">ఆహార, పౌర సరఫరాల శాఖ ,తెలంగాణ</string>
+    <string name="loginUserName">उपयोगकर्ता नाम</string>
+    <string name="loginPassword">पासवर्ड</string>
+    <string name="noNetworkConnection">कोई नेटवर्क कनेक्शन नहीं है</string>
+    <string name="noRecordsFound">कोई रिकॉर्ड नहीं मिला</string>
+    <string name="loginButton">लॉग इन करें</string>
+    <string name="aadharNo">आधार कार्ड नंबर</string>
+    <string name="headAadharNo">परिवार के मुखिया आधार नंबर</string>
+    <string name="invalidAadharNo">अमान्य आधार कार्ड नंबर</string>
+    <string name="aadhar_empty">आधार नंबर खाली है</string>
+    <string name="itemHigh">प्राप्त मात्रा खाली नहीं होना चाहिए</string>
+    <string name="itemZero">प्राप्त मात्रा खाली नहीं होना चाहिए</string>
+    <string name="invalid_card_no">अवैध कार्ड नंबर</string>
+    <string name="exceedsLimit">दर्ज की गई मात्रा शेष पात्रता से अधिक है</string>
+    <string name="noUpdateAvailable">कोई अपडेट उपलब्ध नहीं</string>
+    <string name="thresholdLimit">30</string>
+    <string name="OTPDialog">ओ.टी.पी. संवाद</string>
+    <!-- <string name="loginPasswordSize">Password should more than 5 chars</string> -->
+    <string name="loginInvalidUserPassword">अमान्य उपयोगकर्ता नाम या पासवर्ड</string>
+    <string name="titleActivityMain">स्कैन गतिविधि</string>
+    <string name="pdsSolution">PDS उपाय</string>
+    <string name="titleActivityEntitlement">हकदारी गतिविधि</string>
+    <string name="billSyncing">बिल भेजना&#8230;रुकिए&#8230;</string>
+    <string name="serviceTimeout" tools:ignore="MissingTranslation">300000</string>
+    <string name="hashMethod">SHA-256</string>
+    <string name="hashIterations">1000</string>
+    <string name="saltSize">10</string>
+    <string name="poolSize">16</string>
+    <string name="connectionRefused">सर्वर कनेक्शन त्रुटि</string>
+    <string name="add_proxy">प्रॉक्सी जोड़े</string>
+    <string name="holder_age">आयु</string>
+    <string name="logoutString">यदि आप लॉग आउट करना चाहते हैं ?</string>
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="choose_finger">उंगली चुनें</string>
+    <string name="fingerOnScanner">स्कैनर पर अपनी उंगली रखें</string>
+    <string name="validate">मान्य</string>
+    <string name="init">चालू करो</string>
+    <string name="uninit">बंद करें</string>
+    <string name="start">प्रारंभ</string>
+    <string name="stop">रुकें</string>
+    <string name="reset">रीसेट</string>
+    <string name="fingerScanSuccess">फिंगर प्रिंट स्कैन सफलतापूर्वक</string>
+    <string name="delete">स्पष्ट</string>
+    <string name="start_date">आरंभ करने की तिथि</string>
+    <string name="end_date">अंतिम तिथि</string>
+    <string name="submit">जमा करें</string>
+    <string name="rMN">RMN</string>
+    <string name="loginPageCopyright">Copyright \u00A9 2017 UPPDS</string>
+    <string name="customers">उपभोक्ता विवरण</string>
+    <string name="inputCard">कार्ड नंबर</string>
+    <string name="mobileOTPWrong">गलत ओ.टी.पी.</string>
+    <string name="invalid_ufc">अमान्य UFC</string>
+    <string name="number_of_adults">वयस्कों की नंबर चुनें</string>
+    <string name="select_card_type">कार्ड के प्रकार का चयन करें</string>
+    <string name="num_of_ration_card">राशन कार्ड की कुल नंबर </string>
+    <string name="qr_code">QR कोड</string>
+    <string name="onlineText">ऑनलाईन</string>
+    <string name="offlineText">ऑफ़लाइन</string>
+    <string name="number_of_cylinder">सिलेंडर की नंबर चुनें</string>
+    <string name="number_adults">वयस्कों की नंबर</string>
+    <string name="beneficiaryData">कार्ड सक्रियण</string>
+    <string name="beneficiaryQRData">QR कार्ड सक्रियण</string>
+    <string name="headFamily">परिवार के मुखिया</string>
+    <string name="total">कुल</string>
+    <string name="inwards">अंदर की ओर</string>
+    <string name="loadLocal">लोड स्थानीय डेटाबेस</string>
+    <string name="activate">सक्रिय</string>
+    <string name="stock_inward_tv">भंडार आवक</string>
+    <string name="stock_inward_history">भंडार आवक इतिहास</string>
+    <string name="aadhar_available">आधार नंबर पहले से ही उपलब्ध</string>
+    <string name="stock_status_tv">भंडार की अवस्था</string>
+    <string name="opening_stock">आरंभिक भंडार</string>
+    <string name="inward_qty">आवक मात्रा</string>
+    <string name="sale_qty">बिक्री मात्रा</string>
+    <string name="current_stock">वर्तमान भंडार</string>
+    <string name="close">बंद करे</string>
+    <string name="units_summary">यूनिट वाइज सारांश</string>
+    <string name="details_summary">कार्ड विस्तार सारांश</string>
+    <string name="total_amount">कुल बिक्री राशि (\u20B9)</string>
+    <string name="total_trans">कुल लेन-देन</string>
+    <string name="total_beneficiaries_title">कुल लाभार्थियों</string>
+    <string name="mobile_reg_title">मोबाइल नंबर पंजीकरण</string>
+    <string name="aadhar_reg_title">आधार नंबर पंजीकरण</string>
+    <string name="back">वापस</string>
+    <string name="beneficiaryActivate">लाभार्थी एक्टिवेशन विवरण</string>
+    <string name="ufcCode">UFC कोड</string>
+    <string name="address">पता</string>
+    <string name="totalAmount">रकम</string>
+    <string name="edit">संपादित करें</string>
+    <string name="rMobile">पंजीकृत मोबाइल </string>
+    <string name="semis">:</string>
+    <string name="ackStatus">पावती स्थिति</string>
+    <string name="product">वस्तु</string>
+    <string name="entitled">हकदार मात्रा.</string>
+    <string name="sale_quantity">बिक्री मात्रा</string>
+    <string name="receivedQuantity">प्राप्त मात्रा</string>
+    <string name="monthDatas">महीना     :     </string>
+    <string name="totalPrds">कुल वस्तुों    :     </string>
+    <string name="card_no">कार्ड नंबर</string>
+    <string name="omneAgate">द्वारा संचालित </string>
+    <string name="titleActivitySalesSubmission">बिक्री सारांश गतिविधि</string>
+    <string name="title_activity_beneficiary_activation">लाभार्थी एक्टिवेशन गतिविधि</string>
+    <string name="dbExported">डाटाबेस sdcard में सफलतापूर्वक निर्यात किया जाता है</string>
+    <string name="externalStorageWritable">Sdcard लिखने योग्य नहीं है</string>
+    <string name="externalStorageNotAvailable">Sdcard उपलब्ध नहीं है</string>
+    <string name="externalStorageNotWritable">Sdcard लिखने योग्य नहीं है</string>
+    <string name="backupFolderNot"> बैकअप फ़ोल्डर नहीं बनाया है</string>
+    <string name="cylindersAvail">सिलेंडर </string>
+    <string name="oldFamilyCard">परिवार के पुराने कार्ड नंबर</string>
+    <string name="oldFamilyCardHint">परिवार के पुराने कार्ड नंबर</string>
+    <string name="cylinderHint">सिलेंडरों की सँख्या</string>
+    <string name="scan_qr">स्कैन QR</string>
+    <string name="or">या</string>
+    <string name="bills">बिल</string>
+    <string name="transaction_id">लेन-देन पहचान नंबर</string>
+    <string name="cardTypes">कार्ड के प्रकार</string>
+    <string name="cardCap">कार्ड के प्रकार</string>
+    <string name="normal_cardCap">राशन कार्ड के प्रकार</string>
+    <string name="cardTypeTitle">कार्ड के प्रकार का चयन करें</string>
+    <string name="accessDenied">पहुंच अस्वीकृत</string>
+    <string name="passwordMismatch">पासवर्ड का मेल नहीं हुआ</string>
+    <string name="inCorrectUnamePword">गलत उपयोगकर्ता नाम और पासवर्ड</string>
+    <string name="inCorrectUserCredential">उपयोगकर्ता क्रेडेंशियल्स नहीं है</string>
+    <string name="storeInactive">स्टोर निष्क्रिय</string>
+    <string name="userInactive">उपयोगकर्ता निष्क्रिय</string>
+    <string name="firstUserLoginAlert">उपयोगकर्ता की प्रथम लॉगिन ऑफ़लाइन में अनुमति नहीं है</string>
+    <string name="purchaseHistory">मासिक खरीद इतिहास</string>
+    <string name="ufcData">UFC               : </string>
+    <string name="monthData">महीना           :  </string>
+    <string name="totalAmt">कुल रकम (Rs)</string>
+    <string name="inputError">इनपुट त्रुटि</string>
+    <string name="invalidParameter">अमान्य मापदंड</string>
+    <string name="invalidParameterFormat">अमान्य पैरामीटर प्रारूप</string>
+    <string name="genericDatabaseError">जेनेरिक डाटाबेस त्रुटि</string>
+    <string name="missingParameter">गुम पैरामीटर</string>
+    <string name="serviceNotAvailable">सेवा उपलब्ध नहीं है. कृपया पुन: प्रयास करें</string>
+    <string name="invalid_otp">अमान्य ओ.टी.पी..</string>
+    <string name="cardNotPresent">कार्ड मौजूद नहीं है</string>
+    <string name="connectionError">कनेक्शन त्रुटि. कृपया पुन: प्रयास करें</string>
+    <string name="deviceInvalid">उपकरण निष्क्रिय</string>
+    <string name="fpsStoreInvalid">उचित भूल्म की दकान स्टोर निष्क्रिय</string>
+    <string name="qrCodeInvalid">QR कोड अमान्य</string>
+    <string name="stockNotAvailable">जिंसों अनुपलब्ध भंडार</string>
+    <string name="BeneficiaryMembersNotFount">लाभार्थी परिवार का विवरण नहीं मिला</string>
+    <string name="invalidUpdateStockRequest">अमान्य अद्यतन भंडार अनुरोध.</string>
+    <string name="nonAdminUser">अमान्य अनुरोध. लॉग इन करें व्यवस्थापक क्रेडेंशियल्स के साथ</string>
+    <string name="defaultError">डिफ़ॉल्ट त्रुटि</string>
+    <string name="restoration">डेटाबेस पुनर्स्थापित</string>
+    <string name="geolocation">भू निर्देशांक</string>
+    <string name="statistics">प्रणाली सांख्यिकी</string>
+    <string name="device_number">उपकरण नंबर</string>
+
+
+    <string name="benedetails">लाभार्थी</string>
+    <string name="ration_card_types">राशन कार्ड के प्रकार</string>
+    <string name="card_type">कार्ड के प्रकार</string>
+    <string name="total_cards">कुल कार्ड:</string>
+    <string name="aadhar_verification">आधार सत्यापन : </string>
+
+    <string name="benef_details">लाभार्थी विवरण</string>
+    <string name="proxy_details">प्रॉक्सी विवरण</string>
+    <string name="authentication">प्रमाणीकरण</string>
+    <string name="bio_auth_failed">बॉयोमीट्रिक प्रमाणीकरण विफल</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <string name="one_more_attempt">आपका बॉयोमीट्रिक प्रमाणीकरण विफल रहा है। पुनः प्रयास करें।</string>
+    <string name="exceeded_limit">आप अपने अधिकतम प्रयास को पार कर चुके हैं। आप ओ.टी.पी. प्रमाणीकरण पर नेविगेट कर दिया जाएगा।</string>
+
+    <string name="card_holder_details">कार्डधारक विवरण</string>
+    <string name="proxy_nominee_details">प्रॉक्सी / नामित विवरण</string>
+
+    <string name="one_unit">1 इकाई</string>
+    <string name="one_half_unit">1 1/2 इकाइयों</string>
+    <string name="two_unit">2 इकाइयों</string>
+    <string name="two_half_unit">2 1/2 इकाइयों</string>
+    <string name="three_unit">3 और ऊपर इकाइयों </string>
+
+
+    <string name="stockcheck">भंडार की जांच</string>
+    <string name="othersearch">लाभार्थी खोजें</string>
+
+    <string name="cardregister">कार्ड पंजीकरण</string>
+    <string name="cardactvition">कार्ड सक्रियण</string>
+
+    <string name="qrcard">QR कार्ड सक्रियण</string>
+
+
+
+    <string name="pull_to_refresh_pull_label" tools:ignore="MissingTranslation">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label" tools:ignore="MissingTranslation">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label" tools:ignore="MissingTranslation">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label" tools:ignore="MissingTranslation">Tap to refresh&#8230;</string>
+    <string name="backupDb">बैकअप</string>
+    <!-- Commodity Transaction at POS current date -->
+    <string name="productTransaction">वस्तु</string>
+    <string name="openBalance">खाता खोलते समय रकम</string>
+    <string name="soldQuantity">बिक गया</string>
+    <string name="closingBalance">आखरी बचा हुआ माल</string>
+    <string name="currentStock">वर्तमान भण्डार</string>
+    <string name="amountProduct">रकम</string>
+    <string name="FpsStockInward">भंडार आवक</string>
+    <string name="stockCheck">भंडार रिपोर्ट</string>
+
+    <!-- Fbs stock inward -->
+    <string name="chellanId">चालान आईडी </string>
+    <string name="inward_transit">भण्डार आंतरिक-परिवर्तन</string>
+    <string name="dispatch">प्रेषण</string>
+    <string name="outwardDate">जावक दिनांक</string>
+    <string name="action">कार्य</string>
+    <string name="FPSSTOCKINWARD">उचित भूल्म की द क भंडार आवक</string>
+    <string name="StockUpdation">भंडार आवक अपडेशन</string>
+
+    <!-- Fbs stock inward  Detail -->
+    <string name="fpsInvardDetailProductName">वस्तु</string>
+    <string name="fpsInvardDetailQuantity">मात्रा </string>
+    <string name="fpsInWardDetailReceivedQuantity">प्राप्त मात्रा </string>
+    <string name="fpsIDSubmit">जमा करें</string>
+    <string name="fpsIDCancel">रद्द करना</string>
+    <string name="delivered_date">वितरित की तारीख </string>
+    <string name="doc_date">कागजातों की तारीख </string>
+    <string name="tons">टन</string>
+    <string name="recvd_qty">प्राप्त मात्रा</string>
+    <string name="ack">स्वीकार करो</string>
+    <string name="reference_no">संदर्भ स.</string>
+    <string name="total_bills"> बिल</string>
+    <string name="proxy_activation">प्रॉक्सी जोड़े</string>
+    <string name="oap_anp_card_activation">OAP/ANP कार्ड सक्रियण</string>
+    <string name="qrcard_registration">QR कोड एक्टिवेशन</string>
+    <string name="FIDChellanIdLabel">चालान आईडी </string>
+    <string name="status">स्थिति </string>
+    <string name="godownNameIncorrect">गोदाम का नाम गलत है</string>
+
+    <!-- Auto Upgrade Version -->
+    <string name="autoUpgrade">ऑटो अपग्रेड संस्करण</string>
+    <string name="downloadgingFile" tools:ignore="MissingTranslation">Downloading&#8230;</string>
+
+    <!-- Fps Intent Request Product -->
+    <string name="quantityNeed">मात्रा</string>
+
+    <!--Stock Adjustment-->
+    <string name="fpsStockAdjustmentProductName">वस्तु</string>
+    <string name="fpsStockAdjustmentcurrentStock">वर्तमान भण्डार</string>
+    <string name="stockAdjustment">भण्डार समायोजन</string>
+    <string name="stockAdjustmentTitle">भण्डार समायोजन </string>
+
+    <!-- Bill Detail -->
+    <string name="billDetailSerialNo">स</string>
+    <string name="billDetailProductName">वस्तु</string>
+    <string name="billDetailQuantity">मात्रा</string>
+    <string name="bill_summary">बिल सारांश</string>
+    <string name="no_records">कोई रिकॉर्ड नहीं</string>
+    <string name="ack_alert">कम से कम एक का चयन करें</string>
+    <string name="billDetailProductPrice">रकम(\u20B9)</string>
+    <string name="amount_sold">रकम(\u20B9)</string>
+    <string name="billDetailTotalLabel">कुल</string>
+    <string name="billDetailUfcLabel">UFC</string>
+    <string name="billDetailDateLabel">तारीख</string>
+    <string name="billDetailAddressLabel">पता</string>
+    <string name="billDetailFamilyMembersLabel">परिवार के सदस्य</string>
+    <string name="billDetailFamilyHeadOfTheFamilyLabel">परिवार के मुखिया</string>
+    <string name="billDetailAmountLabel">लेन - देन की तारीख</string>
+    <string name="title_activity_transaction_commodity">सौदा वस्तु</string>
+    <string name="rs">\u20B9</string>
+    <string name="title_activity_registration">पंजीकरण गतिविधि</string>
+    <string name="noOfDaysBefore">दिनों की नंबर</string>
+    <string name="noOfDaysLabel">दिनों की नंबर</string>
+    <string name="title_activity_circular_progress_bar">परिपत्र प्रगति  बार गतिविधि</string>
+    <string name="title_activity_customized_progress_bar">स्वनिर्धारित  प्रगति  बार गतिविधि</string>
+    <string name="title_activity_fps_view_bill">बिल सारांश</string>
+    <string name="billViewBillNo">बिल</string>
+    <string name="billViewDate">तारीख</string>
+    <string name="billViewUfc">UFC</string>
+    <string name="billViewStatus">स्थिति</string>
+    <string name="print">छाप</string>
+    <string name="text_connect">जुडिये</string>
+    <string name="dispatch_date">प्रेषण तारीख</string>
+    <string name="lapsed_time">कालातीत पहर</string>
+    <string name="month_year">महीना / साल</string>
+    <string name="card_holder_name">कार्डधारक का नाम</string>
+    <string name="gowdown_code">गोदाम संहिता</string>
+    <string name="text_disconnect">डिस्कनेक्ट</string>
+    <string name="text_scan_devices">स्कैन उपकरण</string>
+    <string name="text_stop_scan">स्कैन उपकरण</string>
+    <string name="text_list_paired_devices">युग्मित उपकरणों</string>
+    <string name="text_list_devices">उपकरणों की सूची</string>
+    <string name="text_print_receipt">छाप रसीद</string>
+    <string name="text_print_text">छाप पाठ</string>
+    <string name="title_activity_print">छाप गतिविधि</string>
+    <string name="proxy_name">प्रॉक्सी का नाम</string>
+
+
+    <string-array name="cylindersList">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+
+    <string name="select_month">महिना चुने</string>
+    <string name="previous_month">पिछ्ला महिना</string>
+    <string name="next_month">अगले महीने</string>
+    <string name="alloted_qty">आवंटित मात्रा.</string>
+    <string name="issued_qty">जारी किए गए मात्रा.</string>
+    <string-array name="adjustmentSpinner">
+        <item>बढ़ना</item>
+        <item>कमी </item>
+    </string-array>
+    <string name="title_activity_bill_success">बिल सफलता गतिविधि</string>
+    <string name="screensize">मध्यम</string>
+    <string name="title_activity_mobile_otp">मोबाइल ओ.टी.पी. गतिविधि</string>
+    <string-array name="custom_weekdays">
+        <item>रवि</item>
+        <item>सोम</item>
+        <item>मंगल</item>
+        <item>बुध</item>
+        <item>गुरु</item>
+        <item>शुक्र</item>
+        <item>शनि</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>जनवरी</item>
+        <item>फ़रवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितम्बर</item>
+        <item>अक्टूबर</item>
+        <item>नवम्बर</item>
+        <item>दिसम्बर</item>
+    </string-array>
+    <string name="title_activity_crash">क्रैश गतिविधि</string>
+    <string name="title_activity_registration_confirm">पंजीकरण की पुष्टि गतिविधि</string>
+
+    <!-- Bluetooth Bill Print -->
+    <string name="print_date">तारीख</string>
+    <string name="print_commodity">वस्तु</string>
+    <string name="print_qty">मात्रा</string>
+    <string name="print_price">मूल्य (रु)</string>
+    <string name="print_total">कुल (रु)</string>
+    <string name="print_wishes">*** धन्यवाद ***</string>
+    <string name="print_receipt">प्रिंट रसीद</string>
+
+    <!--Month -->
+    <string-array name="month_list">
+        <item>जनवरी</item>
+        <item>फ़रवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितम्बर</item>
+        <item>अक्टूबर</item>
+        <item>नवम्बर</item>
+        <item>दिसम्बर</item>
+    </string-array>
+
+    <!--Advance stock-->
+    <string name="date">तारीख</string>
+    <string name="year">साल</string>
+    <string name="stock">भण्डार</string>
+    <string name="comm">वस्तु</string>
+    <!--inward stock confirm -->
+    <string name="confirm">पुष्टि करें</string>
+
+
+
+    <string name="oap_anp_card_registration">कार्ड पंजीकरण</string>
+    <string name="oap_anp_card_registration_confirm">कार्ड पंजीकरण</string>
+
+    <string-array name="rationCardTypeList">
+        <item>OAP</item>
+        <item>ANP</item>
+    </string-array>
+
+
+
+    <!--Qr code-->
+    <string name="app_picker_name">Applications</string>
+    <string name="bookmark_picker_name">Bookmarks</string>
+    <string name="button_add_calendar">Add to calendar</string>
+    <string name="button_add_contact">Add contact</string>
+    <string name="button_book_search">Book Search</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_custom_product_search">Custom search</string>
+    <string name="button_dial">Dial number</string>
+    <string name="button_email">Send email</string>
+    <string name="button_get_directions">Get directions</string>
+    <string name="button_mms">Send MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Open browser</string>
+    <string name="button_product_search">Product search</string>
+    <string name="button_search_book_contents">Search contents</string>
+    <string name="button_share_app">Application</string>F
+    <string name="button_share_bookmark">Bookmark</string>
+    <string name="button_share_by_email">Share via email</string>
+    <string name="button_share_by_sms">Share via SMS</string>
+    <string name="button_share_clipboard">Clipboard</string>
+    <string name="button_share_contact">Contact</string>
+    <string name="button_show_map">Show map</string>
+    <string name="button_sms">Send SMS</string>
+    <string name="button_web_search">Web search</string>
+    <string name="button_wifi">Connect to Network</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="history_clear_text">Clear history</string>
+    <string name="history_clear_one_history_text">Clear</string>
+    <string name="history_email_title">Barcode Scanner history</string>
+    <string name="history_empty">Empty</string>
+    <string name="history_empty_detail">No barcode scans have been recorded</string>
+    <string name="history_send">Send history</string>
+    <string name="history_title">History</string>
+    <string name="menu_encode_mecard">Use MECARD</string>
+    <string name="menu_encode_vcard">Use vCard</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_google_books">Google</string>
+    <string name="msg_google_product">Google</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+    <string name="msg_invalid_value">Invalid value</string>
+    <string name="msg_redirect">Redirect</string>
+    <string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+    <string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+    <string name="msg_sbc_no_page_returned">No page returned</string>
+    <string name="msg_sbc_page">Page</string>
+    <string name="msg_sbc_results">Results</string>
+    <string name="msg_sbc_searching_book">Searching book\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+    <string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+    <string name="msg_share_text">Or type some text and press Enter</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_auto_focus_title">Use auto focus</string>
+    <string name="preferences_auto_open_web_title">Open web pages automatically</string>
+    <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+    <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">Substitutions: %s = contents, %f = format, %t = type</string>
+    <string name="preferences_custom_product_search_title">Custom search URL</string>
+    <string name="preferences_decode_1D_industrial_title">1D Industrial</string>
+    <string name="preferences_decode_1D_product_title">1D Product</string>
+    <string name="preferences_decode_Aztec_title">Aztec</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_device_bug_workarounds_title">Device Bug Workarounds</string>
+    <string name="preferences_disable_barcode_scene_mode_title">No barcode scene mode</string>
+    <string name="preferences_disable_continuous_focus_summary">Use only standard focus mode</string>
+    <string name="preferences_disable_continuous_focus_title">No continuous focus</string>
+    <string name="preferences_disable_exposure_title">No exposure</string>
+    <string name="preferences_disable_metering_title">No metering</string>
+    <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+    <string name="preferences_front_light_title">Use front light</string>
+    <string name="preferences_front_light_auto">Automatic</string>
+    <string name="preferences_front_light_off">Off</string>
+    <string name="preferences_front_light_on">On</string>
+    <string name="preferences_general_title">General settings</string>
+    <string name="preferences_history_summary">Store your scans in History</string>
+    <string name="preferences_history_title">Add to History</string>
+    <string name="preferences_invert_scan_title">Invert scan</string>
+    <string name="preferences_invert_scan_summary">Scan for white barcodes on black background. Not available on some devices.</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_orientation_title">No automatic rotation</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_result_title">Result settings</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_search_country">Search country</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="result_address_book">Found contact info</string>
+    <string name="result_calendar">Found calendar event</string>
+    <string name="result_email_address">Found email address</string>
+    <string name="result_geo">Found geographic coordinates</string>
+    <string name="result_isbn">Found book</string>
+    <string name="result_product">Found product</string>
+    <string name="result_sms">Found SMS address</string>
+    <string name="result_tel">Found phone number</string>
+    <string name="result_text">Found plain text</string>
+    <string name="result_uri">Found URL</string>
+    <string name="result_wifi">Found WLAN Configuration</string>
+    <string name="sbc_name">Google Book Search</string>
+    <string name="wifi_changing_network">Requesting connection to network\u2026</string>
+
+    <string name="scan_completed">Scan completed</string>
+    <string name="scan">स्कैन</string>
+    <string name="not_scanned">फिंगर प्रिंट स्कैन करें</string>
+    <string name="finger_print_mismatch">Finger print mismatch</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">MANTRA - MFS100</string>
+    <string name="Start">START</string>
+    <string name="Stop">STOP</string>
+    <string name="ExtractISO">ISO(FMR)</string>
+    <string name="ExtractWSQ">WSQ</string>
+    <string name="MatchISO">MATCH ISO(FMR)</string>
+    <string name="ClearLog">CLEAR LOG</string>
+    <string name="SyncCapture">SYNC CAPTURE</string>
+    <string-array name="MFS100Ver"><item>41</item><item>31</item></string-array>
+    <string name="title_activity_preference">Preference</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="beneficiary_member">परिवार के सदस्य</string>
+    <string name="benef_name">नाम</string>
+    <string name="gender">लिंग</string>
+    <string name="benef_dob">DOB</string>
+    <string name="benef_age">आयु</string>
+    <string name="benef_aadhaar">आधार कार्ड नंबर</string>
+
+    <string name="female">महिला</string>
+
+    <string name="date_of_birth">जन्म की तारीख</string>
+
+    <!--Print Operation-->
+    <string name="enterFileName">Enter file name:</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="saveButtonText">Save</string>
+    <string name="newFolderButtonText">New folder</string>
+
+    <!-- Bluetooth Bill Print -->
+
+
+
+    //////////////////////// need to change in hindi      //////////////////////////////////////////////////////////////////////////////
+    <string name="changeDeviceDate">तारीख बदलें</string>
+    <string name="inspection_mobile_no">मोबाइल नंबर : </string>
+    <string name="reconciliation_status">सुलह स्थिति</string>
+    <string name="ufc_not_available"> Ufc मुक्त पूल में उपलब्ध नहीं</string>
+    <string name="background_process_history">पृष्ठभूमि सेवा इतिहास</string>
+    <string name="morning_session">सुबह के सत्र</string>
+    <string name="after_noon_session">दोपहर के सत्र</string>
+    <string name="confirm_exit">क्या आपको बाहर निकलना है ?</string>
+    <string name="seconds_remaining">सेकंड.</string>
+    <string name="reconciliation">सुलह</string>
+    <string name="reconciliation_history">सुलह इतिहास</string>
+    <string name="check_status">स्थिति प्राप्त करें</string>
+
+    <!-- <string name="loginPasswordSize">Password should more than 5 chars</string> -->
+
+    <string name="not_ok">ठीक नहीं है</string>
+    <string name="remove">हटाना</string>
+    <string name="total_aadhar_reg_title">कुल आधार पंजीकरण</string>
+    <string name="card_category">कार्ड श्रेणी</string>
+    <!-- Fbs stock inward  Detail -->
+    <string name="req_date_time">अनुरोध दिनांक</string>
+    <string name="resp_date_time">प्रतिक्रिया की तारीख</string>
+    <string name="req_data">निवेदन</string>
+    <string name="resp_data">प्रतिक्रिया</string>
+
+    <string name="inspection_date">तारीख : </string>
+    <string name="inspection_disagree">असहमत</string>
+    <string name="inspection_prefer_appeal">अपील</string>
+    <string name="inspection_pending">Pending</string>
+
+    <!--Advance stock-->
+    <string name="added">जोड़ा</string>
+    <!--inward stock confirm -->
+
+    <!--Qr code-->
+
+
+    <string name="other">अन्य</string>
+
+
+    <!--Beneficiary Child Member Strings-->
+    <string name="dob">जन्म की तारीख</string>
+    <string name="dob_empty_error">जन्म की तारीख नहीं दी गई है</string>
+    <string name="dob_agelimit_error">Child Member age should not exceed %1$d years   </string>
+
+    <string name="childmember_exceeds"> कुल लाभार्थी बाल सदस्य रिकॉर्ड की नंबर से अधिक है </string>
+    <string name="gender_selection_error">लिंग चयनित नहीं है</string>
+    <string name="test_toast"> नमस्ते  \n  FPS</string>
+    <!--System Statistics Info Label-->
+    <string name="deviceNumber">उपकरण नंबर</string>
+    <string name="health"> स्वास्थ्य </string>
+    <string name="scale"> स्केल </string>
+    <string name="level"> स्तर </string>
+    <string name="devStatus"> स्थिति  </string>
+    <string name="temparature"> तापमान </string>
+    <string name="voltage"> वोल्टेज </string>
+    <string name="present"> वर्तमान </string>
+    <string name="latlong"> अक्षांश / देशान्तर  </string>
+    <string name="noofBeneficiary">लाभार्थी की नंबर </string>
+    <string name="versionNumber"> संस्करण नंबर  </string>
+    <string name="versionName"> संस्करण नाम</string>
+    <string name="freeMemory"> फ्री मेमोरी </string>
+    <string name="shop_in_charge">दुकान प्रभारी : </string>
+    <string name="select_commodity">वस्तु</string>
+    <string name="add"> + अधिक वस्तु जोड़े</string>
+    <string name="next">अगला</string>
+    <string name="upload">अपलोड</string>
+    <string name="capture">कब्जा</string>
+    <string name="inspected_date">तारीख</string>
+    <string name="inspected_by">इंस्पेक्टर नाम</string>
+    <string name="remarks">टिप्पणियों</string>
+    <string name="ack_shop_code">दुकान कोड</string>
+    <string name="issued_qty_pos">Qty. iss. as per POS</string>
+    <string name="issued_qty_card">Qty. iss. as per Card</string>
+
+    <string name="officer_login">अधिकारी लॉग इन</string>
+    <string name="verify_text">सत्यापित करें</string>
+    <string name="complted_inspection_report">निरीक्षण रिपोर्ट</string>
+    <string name="commodity_name">वस्तु का नाम</string>
+    <string name="title_verification_inspection">कार्ड सत्यापन निरीक्षण</string>
+    <string name="title_other_inspection">अन्य निरीक्षण</string>
+    <string name="add_another">+ एक और जोड़ें</string>
+    <string name="others">अन्य निरीक्षण</string>
+    <string name="weighment">तोल निरीक्षण</string>
+    <string name="card_verification">कार्ड का सत्यापन</string>
+    <string name="card_inspection">कार्ड निरीक्षण</string>
+    <string name="reconcil_amount">रकम(₹)</string>
+    <string name="syncnow">अभी तुल्यकालन करें</string>
+    <string name="elapsed_time">बीता हुआ समय</string>
+    <string name="txt_quantity">मात्रा</string>
+    <string name="month_and_year">महीना / साल : </string>
+    <string name="alloted_quantity">आवंटित मात्रा</string>
+    <string name="inward_sync">आवक भेजा जा रहा है&#8230;रुकिए&#8230;</string>
+    <string name="adjustSyncing">समायोजन भेजा जा रहा है&#8230;रुकिए&#8230;</string>
+    <string name="waittoast">कृपया प्रतीक्षा करें...</string>
+    <string name="qtyinbill">बिल में मात्रा</string>
+    <string name="enter_issued_qty">जारी किए गए मात्रा दर्ज करें</string>
+    <string name="card_issued_qty">जारी किए गए मात्रा</string>
+    <string name="card_quantityinpos">पीओएस में मात्रा</string>
+    <string name="weight_qtyinbill">बिल में मात्रा</string>
+    <string name="title_product">वस्तु</string>
+    <!--set by ramesh-->
+    <string name="title_entitlementMasterRulesCount">हकदारी मास्टर नियम</string>
+    <string name="title_regionBasedRulesCount">क्षेत्र आधारित नियम </string>
+    <string name="title_personBasedRulesCount">व्यक्ति आधारित नियम</string>
+    <string name="title_specialBasedRulesCount">विशेष आधारित नियम</string>
+    <string name="title_beneficiaryMemberCount">लाभार्थी सदस्य</string>
+    <string name="title_nfsaPosDataCount">Nfsa Pos</string>
+    <string name="title_aadhaarSeedingCount">आधार सीडिंग</string>
+// new
+    <string name="advance_stock_history">अग्रिम भंडार का इतिहास</string>
+    <string name="bill_search">बिल खोजें</string>
+    <string name="cardActivate">कार्ड सक्रियण करने के लिए एक का दिन समय लगेगा| कृपया कल कीजिएगा</string>
+    <string name="cardBlocked">कार्ड अवरुद्ध किया गया, कृपया हेलपडेस्क संपर्क करें</string>
+    <string name="changeTime">समय बदलने के लिए OK पे क्लिक करें</string>
+    <string name="checksumValidationFail">जाँच योग मान्यकरण विफल हुआ , कृपया  वैध आधार नंबर दर्ज करें</string>
+    <string name="close_sale">बिक्री समाप्त</string>
+    <string name="close_sale_on">पर बिक्री समाप्त</string>
+    <string name="close_sale_summary">बिक्री समाप्त सारांश</string>
+    <string name="contact_helpdesk">कृपया हेल्पडेस्क से संपर्क करें।</string>
+    <string name="crashmsg">अस्थायी रूप से सेवा रोकी</string>
+    <string name="deviceRegistration">उपकरण सफलतापूर्वक पंजीकृत.अनुमोदन के लिए हेल्प डेस्क से संपर्क करें।</string>
+    <string name="emptyaadharMobile">कृपया  आधार नंबर. या मोबाइल नंबर. या A रजिस्टर नंबर रजिस्टर दर्ज करें।.</string>
+    <string name="enter_mobile">मोबाइल नंबर दर्ज करें।</string>
+    <string name="enter_mobile_no">10 अंकों का मोबाइल नंबर दर्ज करें।</string>
+    <string name="enter_otp">ओ.टी.पी. दर्ज करें।</string>
+    <string name="enter_ration">राशन कार्ड नंबर दर्ज करें।</string>
+    <string name="entitlemnt_finished">आपका पात्रता समाप्त हो गया है</string>
+    <string name="entitlemnt_finished_products">निम्नलिखित वस्तुों के लिए पात्रता समाप्त हो गया है| पूरी पात्रता मुमकिन नहीं हैं</string>
+    <string name="error_otp_create">ओ.टी.पी. बनाने में त्रुटि </string>
+<string name="errorUpgrade">नवीनीकरण में दिक्कत हो रही हैं
+कृपया हेलपडेस्क संपर्क करें|</string>
+    <string name="fps_code1">उचित मूल्य की दुकान कोड</string>
+    <string name="fpsposapplication">उचित मूल्य की दुकान - बिक्री केन्द्र आवेदन</string>
+    <string name="geofence_done">उपकरण  अवरुद्ध कर दिया गया है</string>
+    <string name="geofence_reason">आप दुकान से दूर  हैं</string>
+    <string name="i_have_otp">मेरे पास ओ.टी.पी. है </string>
+    <string name="i_need_otp">मुझे ओ.टी.पी. जरूरत है </string>
+    <string name="invalid_card_type_pre">मान्य पत्र दर्ज कीजिए</string>
+    <string name="loginBack">क्या आप आज का बिक्री समाप्त करना चाहते हैं ?</string>
+    <string name="loginButtonTxt">लॉग इन करें</string>
+    <string name="loginUserNameEmpty">उपयोगकर्ता नाम खाली नहीं होना चाहिए</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="members_aadhar_registration">सदस्यों का आधार पंजीकरण</string>
+    <string name="mobile_no_empty">कृपया मोबाइल नंबर दर्ज कीजिए</string>
+    <string name="monthly_inventory_summary">भंडार की स्थिति सारांश</string>
+    <string name="no_change">अद्यतन करने के लिए कोई जानकारी नहीं हैं</string>
+    <string name="no_connectivity">इस  कनेक्टिविटी नहीं है / आप ऑफ़ लाइन हैं</string>
+    <string name="noComodity">इस कार्ड के लिए कोई वस्तु नहीं है</string>
+    <string name="noFpsAadharNumber">यह आधार नंबर इस मूल्य दुकान में पंजीकृत नहीं हैं </string>
+    <string name="noItemSelected">कोई वस्तु चयनित नहीं हैं </string>
+    <string name="noMembers">इस परिवार में कोई सदस्य नहीं हैं </string>
+    <string name="normal_check_details">राशन कार्ड धारक के विवरण की जांच कीजिए|</string>
+    <string name="noteBillViewDate">समन्वयन नहीं हुआ बिल का जानकारी</string>
+    <string name="oap_anp_activation_success">OAP/ANP कार्ड सफलतापूर्वक सक्रिय हुआ</string>
+    <string name="oap_anp_card_activation_success">OAP/ANP कार्ड सफलतापूर्वक सक्रिय हुआ</string>
+    <string name="other_menus">अन्य विवरणायें</string>
+    <string name="otpMessage">ओ.टी.पी. उत्पन्न करके RMN पे भेज दिया गया</string>
+    <string name="out_of_stock_alert_msg">नीचे सूचित किया हुआ वस्तुों के लिए भंडार उपलब्ध नहीं हैं. पूर्णपात्रता मुमकिन नहीं हैं</string>
+    <string name="press_scan">प्रेस स्कैन स्कैनिंग शुरू करने के लिए बटन</string>
+    <string name="select_all_products">सभी वस्तुों को स्वीकार करें</string>
+    <string name="select_member_scan_aadhar">कृपया आधार स्कैन करने के लिए किसी भी सदस्य का चयन करें</string>
+    <string name="select_ration_card_number"> राशन कार्ड नंबर चयन करें</string>
+    <string name="stock_increment">वृद्धि</string>
+<string name="stock_inward_alert_msg">आपका भंडार अनुरोध को मंजूरी दे दीगई है और आप के दुकान पर
+भेजा हैं। </string>
+<string name="successInsertion">बिल को सफलतापूर्वक प्रस्तुत किया गया हैं
+</string>
+    <string name="successInUpdate">स्थान सफलतापूर्वक अपडेट किया हैं</string>
+    <string name="sync">तुल्यकालन</string>
+    <string name="syncBills">बिल जो तुल्यकालन हो चुका हैं </string>
+<string name="technicalFault">सत्र अवधि स्माप्त
+| फिर से कोशिश कीजिए
+या हेल्पडेस्क से संपर्क करें|</string>
+<string name="unassociated">उपकरण किसी भी स्टोर से
+संबद्ध नहीं है</string>
+    <string name="unsyncBills">बिल जो तुल्यकालन नहीं हुआ है</string>
+    <string name="updateionSuccess">लाभार्थी सफलतापूर्वक अपडेट हुआ है</string>
+    <string name="welcome_view">स्वागत हैं|</string>
+    <string name="wrongSelection">कृपया सही नंबर दर्ज करें</string>
+    <string name="changeUrl"> कृपया यूआरएल बदलें </string>
+    <string name="retrieveDbHeading">डेटाबेस निकालना </string>
+    <string name="restoreDbHeading">डेटाबेस पुनर्स्थापित करना</string>
+    <string name="holder_name">कार्ड धारक का नाम</string>
+    <string name="oap_anp_invalid_adult_count">वयस्क गिनती नंबर 1 होना चाहिए </string>
+    <string name="oap_anp_invalid_child_count">बाल गिनती नंबर 0 होना चाहिए </string>
+    <string name="oap_anp_invalid_cylinder_count">सिलेंडर गिनती नंबर 2 होना चाहिए </string>
+    <string name="init_success">उपकरण फिर से चालू किया गया हैं|</string>
+    <string name="uninit_success">उपकरण अप्रारंभीकृत  किया गया हैं|</string>
+    <string name="device_removed">उपकरण हटाया गया हैं|</string>
+    <string name="login">लॉग इन </string>
+    <string name="scanQR">QR - ओ.टी.पी. निर्योग्य किया गया हैं</string>
+    <string name="numberCylinder">सिलेंडर की गिनती नंबर</string>
+    <string name="mobileOTP">ओ.टी.पी.  बग़ैर QR</string>
+    <string name="inputOTP">ओ.टी.पी. दर्ज करें</string>
+    <string name="rMobileOTP">ओ.टी.पी. दर्ज करें</string>
+    <string name="number_of_children">बच्चों की नंबर चुनें</string>
+    <string name="selection">चुनियें</string>
+    <string name="ration_card_pic">कृपया राशन कार्ड की तस्वीर ले|</string>
+    <string name="qr_pic">कृपया QR कोड स्कैन करें|</string>
+    <string name="number_adult_cap">वयस्कों की गिनती नंबर</string>
+    <string name="number_child">बाल गिनती नंबर 0 होना चाहिए </string>
+    <string name="number_child_cap">बचों की गिनती नंबर</string>
+    <string name="retryCount">गिनती अवधि समाप्त हुआ, पुनः प्रयास करें</string>
+    <string name="scanWithOutOTP">QR -  ओ.टी.पी. के साथ. </string>
+    <string name="view_full_details">कार्ड सारांश विवरण देखें</string>
+    <string name="skipAdhar">आधार नंबर छोड़ें</string>
+    <string name="stock_status_available">भंडार्स उपलब्ध पर</string>
+    <string name="regenerate_otp">ओ.टी.पी. पुनःउत्पन्न करें</string>
+    <string name="numberOfProducts">वस्तुओं की नंबर</string>
+    <string name="password">पासवर्ड</string>
+    <string name="availed">बिल मात्रा</string>
+    <string name="price">मूल्य</string>
+    <string name="quantity">बिल मात्रा</string>
+    <string name="viewString">देखें</string>
+    <string name="cardActivated">कार्ड सक्रिय हुआ</string>
+    <string name="ration_card_number1">राशन कार्ड नंबर</string>
+    <string name="reg_date">पंजीकृत तिथि</string>
+    <string name="cardAlreadyActivated">कार्ड पहले से ही सक्रिय हैं</string>
+    <string name="oldRationNull">पुराना राशन कार्ड नंबर अशक्त नहीं होना चाहिए</string>
+    <string name="rmnNull">मोबाइल नंबर अशक्त नहीं होना चाहिए</string>
+    <string name="rmnExist">मोबाइल नंबर पहले से ही मौजूद हैं</string>
+    <string name="cylinderNull">सिलेंडरों की नंबर  अशक्त नहीं होना चाहिए</string>
+    <string name="noFreeInSdcard">sdcard में रिक्त स्थान उपलब्ध नहीं है</string>
+    <string name="dbImported">उचित मूल्य की दुकान की डेटा स्थानीय डेटाबेस में आयात किया  है </string>
+    <string name="noFileSdcard">sdcard बैकअप में कोई फाइल नहीं है</string>
+    <string name="oldDbBackup">मौजूदा डेटाबेस बैकअप फ़ोल्डर में नकल किया  है </string>
+    <string name="noOfCylinderTitle">सिलेंडर नंबर चुनें</string>
+    <string name="cylinderHints">सिलेंडरों की सँख्या</string>
+    <string name="capture_image">तस्वीर लें</string>
+    <string name="userName"> लॉग इन आईडी</string>
+    <string name="loginId"> लॉग इन आईडी</string>
+    <string name="cardNumberEmpty">कार्ड नंबर खाली नहीं होना चाहिए</string>
+    <string name="enter_otp_empty">कृपया ओ.टी.पी. दर्ज करें </string>
+    <string name="fpsBeneficiaryMismatch">लाभार्थी इस विशेष एफपीएस का नहीं है</string>
+    <string name="beneficiaryExceededAllotment">लाभार्थी पात्रता पार हो चुका हैं</string>
+    <string name="beneficiaryInvalid">कार्ड अवरुद्ध किया हुआ हैं</string>
+    <string name="qrwithotp">QR ओ.टी.पी. के साथ</string>
+    <string name="stockNotAvailableProduct">भंडार उपलब्ध नहीं हैं</string>
+    <string name="fpsStockNotAvailable">अद्यतन के लिए कोई वैध FPS Stock नहीं हैं</string>
+    <string name="retrieve">डेटाबेस निकालें</string>
+    <string name="card_details">राशन कार्ड</string>
+    <string name="ration_card_type">राशन कार्ड के प्रकार</string>
+    <string name="otp_success">ओ.टी.पी. प्रमाणीकरण सफलत हुआ हैं</string>
+    <string name="otp_success_body">आपका ओ.टी.पी. प्रमाणीकरण सफल हुआ है। आप पात्रता पृष्ठ पर भेज दिया जाएगा।</string>
+    <string name="otp_failure">ओ.टी.पी. प्रमाणीकरण विफल हुआ हैं</string>
+    <string name="otp_failure_body">आपका ओ.टी.पी. प्रमाणीकरण विफल रहा है। आप वस्तु की ही तय प्रतिशत खरीदने के लिए पात्र हैं।</string>
+    <string name="stockinwards">भंडार आवक</string>
+    <string name="transaction">लेन-देन</string>
+    <string name="RationCardSales">राशन कार्ड आधारित बिक्री</string>
+    <string name="retrieveDbString">डेटबेस POS मेमोरी कार्ड से निकाल कर SD कार्ड को प्राप्त हो जाएगा</string>
+    <string name="restorationDbString">डेटबेस SD कार्ड  से निकाल कर  कोPOS मेमोरी कार्ड को बहाल हो जाएगा</string>
+    <string name="CommodityTransaction">लेन-देन वस्तु</string>
+    <string name="inOutBalance">बिक्री बंद </string>
+    <string name="godown">गोदाम</string>
+    <string name="ackDate">पावती तारीख</string>
+    <string name="batchNumber">बैच नंबर</string>
+    <string name="receivedQuantityHigh">कुलमात्रा की तुलना में प्राप्त मात्रा अधिक नहीं होना चाहिए</string>
+    <string name="noRecords">कोई रिकॉर्ड उपलब्ध नहीं हैं</string>
+    <string name="AcknowledgementStatus">पावती स्थिति</string>
+    <string name="vehicle_no">वाहन नंबर</string>
+    <string name="godown_reference_no">गोदाम संदर्भ नंबर</string>
+    <string name="ration_card_activation">राशन कार्ड सक्रियण</string>
+    <string name="FIDAckDateLabel">पावती  की तारीख</string>
+    <string name="FIDBatchNoLabel">बैच नंबर</string>
+    <string name="FPSSTOCKINWARDDETAILS">भंडार आवक विवरण</string>
+    <string name="stockUpdation">भंडार आवक अपडेशन सफलतापूर्वक हुआ हैं</string>
+    <string name="initalstockUpdation">प्रारंभिक भंडार सर्वर में अद्यतन किया है</string>
+    <string name="stockInwardResponseTitle">भंडार आवक प्रतिक्रिया</string>
+    <string name="messageStockInwardupdate">भंडार आवक अपडेशन सफलतापूर्वक हुआ हैं</string>
+    <string name="messageStockManualInwardupdate">भण्डार अद्यतन हुआ हैं</string>
+    <string name="selectGodown">गोदाम चुनिए</string>
+    <string name="challanNoGreaterZero">चालान नंबर शून्य से अधिक होना चाहिए</string>
+    <string name="enterChellanNo">चालान दर्ज कीजिए</string>
+    <string name="challanNo">चालान नंबर</string>
+    <string name="stockInwardManual">भंडार आवक पुस्तिका</string>
+    <string name="enterFirstLetterOfGodown">गोदाम के पहले अक्षर दर्ज करें</string>
+    <string name="FPSINTENTREQUEST">उचित मूल्य की दुकान वस्तु निवेदन </string>
+    <string name="fpsProductIntentRequest">मैनुअल अनुरोध</string>
+    <string name="serverUpdated">अनुरोध सर्वर से सफलतापूर्वक अद्यतन हुआ हैं</string>
+    <string name="fpsIntentRequest">अनुरोध</string>
+    <string name="fpsStockAdjustmentQuantity">मात्रा समायोजित करें </string>
+    <string name="fpsStockAdjustmentOperation">समायोजित करें </string>
+    <string name="enterAdjustQuantity"> समायोजन मात्रा दर्ज करें </string>
+    <string name="enterAdjustQuantityWrong">सही समायोजन मात्रा दर्ज करें </string>
+    <string name="messageAdjustUpdated">भंडार समायोजन सफलतापूर्वक अपडेट हुआ हैं</string>
+    <string name="billDetails">बिल विस्तार</string>
+    <string name="billDetailTxnBill">उचित मूल्य की दुकान लेन-देन सन्दर्भ</string>
+    <string name="title_activity_bill_Detail">बिल विस्तार</string>
+    <string name="title_activity_qr_code_with_otp">Qr कोड ओ.टी.पी. के साथ गतिविधि</string>
+    <string name="title_activity_fps_stock">उचित मूल्य की दुकान भण्डार गतिविधि</string>
+    <string name="title_activity_fps_stock_inward_detail">उचित मूल्य की दुकान भण्डार आंतरिक विस्तार गतिविधि</string>
+    <string name="title_activity_fps_intent_request">उचित मूल्य की दुकान इरादा  निवेदन गतिविधि</string>
+    <string name="purgBill">बिल सही करना</string>
+    <string name="purgeBillBItem">बिल विवरण सही करना</string>
+    <string name="fpsViewBill">बिल देखें</string>
+    <string name="billViewSerialNo">नंबर</string>
+    <string name="title_activity_success_failure">सफलता- असफलता गतिविधि</string>
+    <string name="text_bluetooth_off">ब्लूटूथ बंद है</string>
+    <string name="text_bluetooth_on">ब्लूटूथ चालू है </string>
+    <string name="view">देखें</string>
+    <string name="ack_product">सभी वस्तुों पावती दें</string>
+    <string name="stock_history_view">भंडार आवक इतिहास देखें </string>
+    <string name="stock_adjustment_history_view">भंडार भंडार समायोजना इतिहास देखें </string>
+    <string name="text_enable_bluetooth">ब्लूटूथ सक्षम करें </string>
+    <string name="text_disable_bluetooth">ब्लूटूथ अक्षम करें </string>
+    <string name="text_pair">जोड़ो</string>
+<string name="text_print_demo">छाप प्रदर्शन</string>
+    <string name="title_activity_stock_allotment_detail">भंडार आवंटित विस्तार गतिविधि</string>
+    <string name="current_month">वर्तमान महीने</string>
+    <string name="balance_qty">शेष मात्रा</string>
+    <string name="stock_allotment_available">भंडार आवंटित विवरण</string>
+    <string name="title_activity_beneficiary_aadhar_seeding">लाभार्थी आधार नंबर जमा गतिविधि</string>
+<string name="title_activity_beneficiary_submission">
+लाभार्थी प्रस्तुत करने का गतिविधि</string>
+<string name="title_activity_sync_page">
+तुल्यकालन पृष्ठ गतिविधि</string>
+    <string name="title_activity_sale_order">बिक्री अनुक्रम गतिविधि</string>
+    <string name="title_activity_statistics">स्टॅटिस्टिक गतिविधि</string>
+    <string name="openingstocktitle">प्रारंभिक भंडार</string>
+    <string name="openingstockheading">प्रारंभिक भंडार</string>
+<string name="missedOpeningStockHeading">
+पड़ा हुआ प्रारंभिक भंडार</string>
+<string name="missedOpeningStockComment">कृपया नीचे दिए गए
+वस्तुों का प्रारंभिक भंडार आवंटित करे</string>
+    <string name="version_upgrade">संस्करण उन्नति जानकारी</string>
+    <string name="print_title">राशन की दुकान की बिक्री बिल</string>
+    <string name="print_billid">बिल की आईडी</string>
+    <string name="print_shopcode">दुकान संहिता</string>
+    <string name="print_cardno">कार्ड नंबर</string>
+    <string name="print_success">प्रिंट सफलता</string>
+<string name="no_printer">
+प्रिंटर जुड़ा हुआ नहीं है</string>
+
+    <string name="usb_printer_connecting">कनेक्ट...</string>
+    <string name="usb_printer_connected">जुड़े हुए</string>
+    <string name="usb_printer_failed">अनुत्तीर्ण होना</string>
+    <string name="usb_printer_denied">अनुमति नहीं मिली</string>
+
+    <string name="print_connection">प्रिंटर विफल</string>
+    <string name="print_status">प्रिंटर स्थिति</string>
+    <string name="print_failed">प्रिंटर से संपर्क उपलब्ध नहीं है</string>
+    <string name="advanced_stock">पेशगी भंडार</string>
+    <string name="advanced_stock_title">पेशगी भंडार</string>
+    <string name="sno">क्रमांक</string>
+    <string name="month">महीना</string>
+    <string name="inward_transit_confirm">आवक भंडार पंजिका</string>
+    <string name="printing_txt">प्रिंटिंग...</string>
+<string name="title_activity_update_user_details">
+उपयोगकर्ता जानकारी गतिविधि अद्यतन करे</string>
+<string name="select_ration_card_type">
+राशन कार्ड के प्रकार का चयन करें</string>
+    <string name="opening_stock_mandatory_alert">कृपया नीचे दिए गए सभी वस्तुों का प्रारंभिक भंडार दर्ज करे</string>
+    <string name="fpsCodeStatus">अभी तक सौंपा नहीं गया है</string>
+    <string name="Init">चालू करो</string>
+    <string name="UnInit">बंद करें</string>
+    <string name="male">पुस्र्ष</string>
+    <string name="print_title1">राशन की दुकान</string>
+    <string name="print_title2">बिक्री बिल</string>
+    <string name="print_unit_rate">मूल्य</string>
+<string name="incorrectDeviceDate">
+कृपया आपके उपकरण की तारीख की जाँच करे </string>
+    <string name="sync_failed">तुल्यकालन विफल</string>
+    <string name="invalid_card_type">अमान्य कार्ड के प्रकार</string>
+    <string name="retry_limit">पुन: प्रयास पार</string>
+    <string name="aadhar_qr_based">आधार कार्ड QR आधारित है</string>
+    <string name="fine_amt">जुर्माने की रकम</string>
+    <string name="enter_overall_status">कृपया कुल मिलाकर स्थिति दर्ज करे</string>
+    <string name="enter_overall_comment">कृपया कुल मिलाकर टिप्पणी दर्ज करे</string>
+    <string name="enter_fine_amount">कृपया जुर्माने की रकम दर्ज करे</string>
+<string name="no_benficiary_found">स्कैन किए गए इस आधार नंबर
+राशन की दुकान में पंजीकृत नहीं है</string>
+    <string name="nextMorning">कल सुबह</string>
+    <string name="nextAfternoon">कल दोपहर</string>
+    <string name="enterAadharNo">कृपया आधार कार्ड नंबर दर्ज करें</string>
+    <string name="reconciliation_terms">दिया हुआ भंडार दुकान में भौतिक भंडार के साथ मेल खाता है</string>
+    <string name="sync_page_msg">कृपया प्रतीक्षा करें ... डाटाबेस तुल्यकालन प्रगति में ....</string>
+    <string name="sync_page_completed">डाटाबेस तुल्यकालन पपूरा हो गया है ........</string>
+<string name="download_completed">
+डाउनलोड पूरा हो गया है…….</string>
+    <string name="downloading_files">फ़ाइलों डाउनलोड हो रही है</string>
+<string name="shopInactive">
+राशन की दुकान निष्क्रिय हे</string>
+    <string name="deviceInactive">उपकरण निष्क्रिय हे</string>
+    <string name="no_transaction">लेन-देन उपलब्ध नहीं है</string>
+<string name="reportUpdated">
+रिपोर्ट प्रस्तुत सफल है</string>
+    <string name="response">रिपोर्ट का स्थिति</string>
+    <string name="reconciliation_success">आपका भंडार मेल मिलाप कर दिया गया है</string>
+<string name="aadhar_available_for_head">
+लाभार्थी पहले से ही परिवार के मुखिया की आधार नंबर से पंजीकृत है</string>
+    <string name="unit">मात्रक</string>
+    <string name="ack_statement">आपकी दुकान का निरीक्षण किया गया है और निष्कर्ष नीचे दिया गया हैं. क्या आप</string>
+    <string name="reconciliation_id">मिलाप आईडी</string>
+    <string name="inspection_agree">सहमत होना</string>
+    <string name="synced">तुल्यकालन</string>
+    <string name="error_desc">त्रुटि का विवरण</string>
+    <string name="select">चुनना</string>
+    <string name="select_service_type">चुनिंदा सेवा का प्रकार</string>
+    <string name="service_type">सेवा का प्रकार</string>
+    <string name="scan_aadhar_card">आधार कार्ड स्कैन करे</string>
+    <string name="already_saved_ph_no">मोबाइल नंबर पहले से ही एक लाभार्थी के नाम पर पंजीकृत है</string>
+<string name="dob_photocopy_error">
+जन्म प्रमाण पत्र फोटोकॉपी संलग्न नहीं है</string>
+<string name="dob_wrong">
+भविष्य की तारीख जोड़ा नहीं जा सकता है</string>
+    <string name="received_dob_photocopy">मैं जन्म प्रमाण पत्र की फोटो प्रति प्राप्त किया है</string>
+    <string name="ischildmember">बच्चे सदस्य है</string>
+    <string name="childmember_updation_success">बाल सदस्य रिकॉर्ड को सफलता पूर्वक जोड़े</string>
+    <string name="childmember_cant_add">बाल सदस्य जोड़ा नहीं जा सकता है</string>
+    <string name="plugged">प्लग</string>
+    <string name="technology">टैकनोलजी</string>
+    <string name="noofunsyncbill">गैर तुल्यकालन बिल की नंबर</string>
+    <string name="unsyncedInward">गैर तुल्यकालन आवक</string>
+    <string name="unsyncAdjustment">गैर तुल्यकालन समायोजन</string>
+    <string name="cpuUtilization">सीपीयू का उपयोगीकरण</string>
+<string name="appInstalledTime">
+एप्लिकेशन स्थापित समय</string>
+    <string name="appUpdatedTime">एप्लिकेशन का अद्यतन समय</string>
+    <string name="totalMemory">कुल मेमोरी</string>
+    <string name="memoryUsed">प्रयोग हुई मेमोरी</string>
+    <string name="harddiskSize">हार्ड डिस्क स्पेस</string>
+    <string name="networkType">नेटवर्क के प्रकार</string>
+    <string name="simId">सिम आईडी</string>
+    <string name="unsyncLogin">गैर तुल्यकालन लॉग इन</string>
+    <string name="title_fair_shop_details">राशन दुकान विवरण</string>
+    <string name="select_inspection_criteria">निरीक्षण मापदंडों का चयन करे</string>
+    <string name="inspection_details">निरीक्षण के विवरण</string>
+<string name="inspection_finding">
+निरीक्षण के निष्कर्षों</string>
+<string name="overall_inspection_finding">
+संपूर्ण निरीक्षण के निष्कर्षों</string>
+    <string name="inspection_criteria_heading">निरीक्षण के मानदंड</string>
+    <string name="inspection_list">निरीक्षण की सूची</string>
+    <string name="stock_inspection">भंडार का निरीक्षण</string>
+    <string name="unsavedStockInspection">आपके पिछले भंडार का निरीक्षण अभी तक सहेजा नहीं गया है। क्या आप बाहर निकलने के बारे में सुनिश्चित हे </string>
+    <string name="unsavedInspectionReport">आपके रिपोर्ट अभी तक सहेजा नहीं गया है। क्या आप बाहर निकलने के बारे में सुनिश्चित हे </string>
+    <string name="stockInspectionRemoveAlert">क्या आप निरीक्षण की गयी वस्तु हटाने के बारे में सुनिश्चित हे</string>
+<string name="cardInspectionRemoveAlert">क्या आप निरीक्षण की गयी
+परिवार कार्ड नंबर हटाने के बारे में सुनिश्चित हे</string>
+<string name="weightInspectionRemoveAlert">क्या आप निरीक्षण की गयी
+बिल नंबर हटाने के बारे में सुनिश्चित हे</string>
+<string name="shop_OtherInspectionRemoveAlert">क्या आप निरीक्षण की गयी
+टिप्पणियों को हटाने के बारे में सुनिश्चित हे</string>
+<string name="sel_commodity">
+कृपया वस्तु का चयन करें</string>
+    <string name="enter_remarks">कृपया टिप्पणी दर्ज करें</string>
+    <string name="enter_physical_stock">कृपया निरीक्षण की गयी भंडार दर्ज करें</string>
+    <string name="stock_already_inspected">वस्तु पहले से ही निरीक्षण किया गया है</string>
+    <string name="no_report">रिपोर्ट नहीं है</string>
+    <string name="no_commodity">वस्तु नहीं है</string>
+    <string name="new_inspection">नए निरीक्षण</string>
+    <string name="image_limit">ध्यान दें: केवल तीन तस्वीर की अनुमति है</string>
+    <string name="overall_remarks">संपूर्ण टिप्पणी</string>
+    <string name="overall_status">संपूर्ण स्थिति</string>
+    <string name="shop_code">दुकान कोड :</string>
+    <string name="save">सेव </string>
+    <string name="system_stock">वर्तमान भंडार</string>
+    <string name="physical_stock">निरीक्षण किया हुआ भंडार</string>
+    <string name="variance">भेद</string>
+    <string name="otp">ओ.टी.पी.</string>
+<string name="otp_message">ओ.टी.पी. आपके मोबाइल नंबर पर भेज दिया गया है
+ </string>
+    <string name="resend_otp">कृपया ओ.टी.पी. पुन दर्ज करें</string>
+    <string name="otp_empty">कृपया ओ.टी.पी. दर्ज करें</string>
+    <string name="family_card_number">परिवार कार्ड नंबर</string>
+    <string name="select_product">वस्तु का चयन करें</string>
+    <string name="bill_number">बिल नंबर</string>
+    <string name="title_weight_inspection">वजन का निरीक्षण</string>
+    <string name="title_shop_open_close">दुकान खोलना &amp; निकट अवलोकन</string>
+    <string name="alert_bill_number">बिल नंबर दर्ज करें</string>
+    <string name="no_remarks">टिप्पणी नही है</string>
+    <string name="unsavedWeighmentInspection">आपके पिछले तोल निरीक्षण अभी तक सहेजा नहीं गया है। क्या आप बाहर निकलने के बारे में सुनिश्चित हे </string>
+    <string name="unsavedOtherInspection">आपके पिछले टिप्पणियों का निरीक्षण अभी तक सहेजा नहीं गया है। क्या आप बाहर निकलने के बारे में सुनिश्चित हे </string>
+    <string name="no_bill_number">बिल नंबर नही है</string>
+    <string name="unsavedcardInspection">आपके पिछले कार्ड निरीक्षण अभी तक सहेजा नहीं गया है। क्या आप बाहर निकलने के बारे में सुनिश्चित हे </string>
+    <string name="valid_bill_number">मान्य बिल नंबर दर्ज करें</string>
+    <string name="quantityinpos">पीओएस में मात्रा</string>
+    <string name="no_bills">गैर तुल्यकालन बिल नहीं है</string>
+    <string name="no_inwards">गैर तुल्यकालन आवक नहीं है</string>
+    <string name="no_adjust">गैर तुल्यकालन समायोजन नहीं है</string>
+    <string name="reconciliation_title">मिलाप</string>
+    <string name="no_data">आकड़ा उपलब्ध नहीं है</string>
+    <string name="stock_allocation_title">भंडार का आवंटन</string>
+<string name="btn_reconcil_historyview">
+मेल-मिलाप का इतिहास देखें</string>
+    <string name="rationnumber_billnumber">परिवार कार्ड नंबर और बिल नंबर मे मिलान नहीं है</string>
+    <string name="pair_device">प्रिंटर के साथ ब्लूटूथ जोड़े</string>
+<string name="title_bluetooth_devices">प्रिंट करने के लिए उपकरण का चयन करें
+</string>
+    <string name="observedqty">निरीक्षण की गयी मात्रा</string>
+    <string name="unack_inward">आवक स्वीकृत नहीं थे । कृपया आगे बढ़ने के लिए स्वीकार करें</string>
+    <string name="unack_adjustment">समायोजन स्वीकृत नहीं थे । कृपया आगे बढ़ने के लिए स्वीकार करें</string>
+    <string name="enter_quantityinpos">कृपया पीओएस में मात्रा दर्ज करें</string>
+    <string name="enter_valid_observed_stock">कृपया मान्य निरीक्षण की गयी भंडार दर्ज करें</string>
+    <string name="inspection">निरीक्षण</string>
+    //Payment Mode Dialog
+    <string name="paymentOptions">Payment Options</string>
+    <string name="cashOrCard">Cash or Card</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="connect_printer">Please connect the  printer</string>
+</resources>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/sale_dialog_header"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@color/login_background"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_one"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_two"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_three"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="10dp">
+
+                    <Button
+                        android:id="@+id/button_four"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="4"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_five"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="5"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_six"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="6"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="10dp">
+
+                    <Button
+                        android:id="@+id/button_seven"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="7"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_eight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="8"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_nine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="9"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_zero"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="0"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button_dot"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/sale_dialog"
+                        android:text="."
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/sale_dialog">
+
+                    <Button
+                        android:id="@+id/button_bkSp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#00000000"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/back"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_backspace" />
+                </RelativeLayout>
+
+
+            </GridLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sale_dialog_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_back_ground"
+                android:gravity="right"
+                android:maxLength="7"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:textColor="#474747"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/fivekgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="#0288D1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tenkgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#0288D1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/fifteenkgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="#0288D1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/fullkgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#0288D1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/entitledOK"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#029555"
+                    android:padding="10dp"
+                    android:text="Ok"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"></LinearLayout>
+</LinearLayout>

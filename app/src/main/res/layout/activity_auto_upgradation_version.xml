@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/tg_actionbar_custom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="30dp"
+        android:background="@drawable/back_ground_activate">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/autoUpgradeprogressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false" />
+
+
+            <TextView
+                android:id="@+id/tvUploadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/autoUpgradeprogressBar"
+                android:layout_alignRight="@+id/autoUpgradeprogressBar"
+                android:layout_below="@+id/autoUpgradeprogressBar"
+                android:layout_marginTop="66dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvDownloadTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/autoUpgradeprogressBar"
+                android:layout_alignLeft="@+id/autoUpgradeprogressBar"
+                android:layout_alignStart="@+id/autoUpgradeprogressBar"
+                android:text="@string/downloadgingFile"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

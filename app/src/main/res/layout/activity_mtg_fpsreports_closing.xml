@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+
+        android:layout_below="@+id/topLayout"
+        android:layout_marginBottom="27dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fpsmemberlinearLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_slate_gray"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="520dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/fpsmembersname"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Item"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fpsmemberuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:text="QTY"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sum1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/fpsmemberlinearLayoutTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1">
+
+
+            <com.omneagate.Util.PullToRefresh.LoadMoreListView
+                android:id="@+id/listView_fps_member_detail"
+                style="@style/scrollbar_shape_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#777777"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutNoRecords"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/tvNoRecords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_records"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- <LinearLayout
+             android:id="@+id/fps_tg_members_button"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/sum1"
+             android:layout_gravity="center_horizontal"
+             android:orientation="horizontal"
+             android:weightSum="9"
+
+             >
+
+             &lt;!&ndash;<Button
+                 android:id="@+id/bestfingerdetection"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/button_login"
+                 android:padding="10dip"
+                 android:layout_weight="3"
+                 android:text="BEST FINGER DETECTION" />&ndash;&gt;
+
+
+             <LinearLayout
+                 android:id="@+id/best_finger_detection_layout"
+                 android:layout_width="300dp"
+                 android:layout_height="fill_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/button_login"
+                 android:layout_weight="3"
+                 android:orientation="horizontal">
+
+                 <com.omneagate.Util.SquareLayout
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_alignParentRight="true"
+                     android:background="@drawable/button_login">
+
+                     <ImageView
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:padding="5dp"
+                         android:src="@drawable/finger_icon_tg" />
+                 </com.omneagate.Util.SquareLayout>
+
+                 <TextView
+                     android:id="@+id/best_finger_detection"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:gravity="center"
+                     android:text="BEST FINGER DETECTION"
+                     android:textColor="@color/white"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+             </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:id="@+id/scan_finger_print_layout"
+                 android:layout_width="300dp"
+                 android:layout_height="fill_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/button_login"
+                 android:layout_weight="3"
+                 android:orientation="horizontal">
+
+                 <com.omneagate.Util.SquareLayout
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_alignParentRight="true"
+                     android:background="@drawable/button_login">
+
+                     <ImageView
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:padding="5dp"
+                         android:src="@drawable/finger_icon_tg" />
+                 </com.omneagate.Util.SquareLayout>
+
+                 <TextView
+                     android:id="@+id/scan_finger_print"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:gravity="center"
+                     android:text="SCAN FINGER PRINT"
+                     android:textColor="@color/white"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+             </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+             &lt;!&ndash; <Button
+                  android:id="@+id/scanfingerprint"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+
+                  android:padding="10dip"
+                  android:layout_weight="3"
+                  android:background="@drawable/button_login"
+                  android:text="SCAN FINGER PRINT" />&ndash;&gt;
+
+
+
+
+             &lt;!&ndash;<Button&ndash;&gt;
+             &lt;!&ndash;android:id="@+id/scanfingerprint1"&ndash;&gt;
+             &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+             &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+             &lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;
+             &lt;!&ndash;android:background="@drawable/button_login"&ndash;&gt;
+             &lt;!&ndash;android:padding="10dip"&ndash;&gt;
+             &lt;!&ndash;android:layout_weight="3"&ndash;&gt;
+             &lt;!&ndash;android:text="SCAN IRIS" />&ndash;&gt;
+
+
+
+             <LinearLayout
+                 android:id="@+id/scan_iris_layout"
+                 android:layout_width="300dp"
+                 android:layout_height="fill_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:background="@drawable/button_login"
+                 android:layout_weight="3"
+                 android:orientation="horizontal">
+
+                 <com.omneagate.Util.SquareLayout
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_alignParentRight="true"
+                     android:background="@drawable/button_login">
+
+                     <ImageView
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:padding="5dp"
+                         android:src="@drawable/iris_icon_tg" />
+                 </com.omneagate.Util.SquareLayout>
+
+                 <TextView
+                     android:id="@+id/scan_iris"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:gravity="center"
+                     android:text="SCAN IRIS"
+                     android:textColor="@color/white"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+             </LinearLayout>
+         </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+
+

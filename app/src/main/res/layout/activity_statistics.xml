@@ -1,0 +1,1137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"/>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_statistics"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/deviceNumLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Device Number"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/scaleLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Scale"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+                <!-- <View
+                     android:layout_width="fill_parent"
+                     android:layout_height="2dp"
+                     android:background="#d4d4d4" />
+
+                 <TextView
+                     android:layout_width="fill_parent"
+                     android:layout_height="60dp"
+                     android:background="#eeeeee"
+                     android:gravity="center"
+                     android:text="Battery Level"
+                     android:textColor="#757575"
+                     android:textSize="@dimen/table_title"
+                     android:textStyle="bold" />-->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/pluggedLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Plugged"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/technologyLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Technology"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/voltageLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Voltage"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/latlongLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Latitude/Longitude"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/versionNumberLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Version Number"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unsyncInwardLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Unsynced Inward"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unsyncAdjustmentLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Unsynced Adjustment"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/appInstalledTimeLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="App Installed Time"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/appUpdatedTimeLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="App updated Time"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/memoryUsedLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Memory Used"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/networkTypeLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Network Type"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unsyncLoginCountLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Unsync Login"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_entitlementMasterRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="entitlementMasterRules"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_regionBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="regionBasedRules"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:visibility="gone"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_aadhaarSeedingCount"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="aadhaarSeeding"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#d4d4d4"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/deviceNum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/deviceScale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+                <!--<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/batteryLevel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold" />-->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryPlugged"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryTech"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryVoltage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/latitudeDevice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/versionNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unsyncedInward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unsyncedAdjustment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/appInstalledTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/appUpdateTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/memUsed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/networkType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unSyncLoginCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/entitlementMasterRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/regionBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <!--<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/aadhaarSeedingCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#d4d4d4"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/healthLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Health"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/levelLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Level"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/statusLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/temperatureLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Temperature"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/presentLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Present"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+                <!--<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Longitude"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold" />-->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/noOfBeneficiaryLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="No. of Beneficiary"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/noofUnsyncBillLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="No. of Unsync Bill"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/versionNameLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Version Name"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/cpuUtilizatonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="CPU utilization"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/freeMemoryLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Free Memory"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/totalMemoryLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Total Memory"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/hardDiskSizeLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Harddisk Size"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/simIdLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="Sim Id"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_personBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="personBasedRules"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_specialBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="specialBasedRules"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_beneficiaryMemberCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="beneficiaryMember"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:visibility="gone"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/title_nfsaPosDataCount"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:text="nfsaPosData"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#d4d4d4"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/batteryHealth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryLvl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryTemp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/batteryPresent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+                <!--<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/longitudeData"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold" />-->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/noOfBeneficiary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/unSyncBill"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/cpuUtil"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/memoryRemain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/totMemory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/hardDiskSize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/simId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/personBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/specialBasedRulesCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/beneficiaryMemberCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:visibility="gone"
+                    android:background="#d4d4d4"/>
+
+                <TextView
+                    android:id="@+id/nfsaPosDataCount"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/table_title"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

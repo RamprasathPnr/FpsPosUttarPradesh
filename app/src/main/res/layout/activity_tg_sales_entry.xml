@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/timeLayout"
+        layout="@layout/tg_user_top_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topLayout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/timeLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#D6E3EF">
+
+            <TextView
+                android:id="@+id/ration_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/RATION_CARD_NO" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpsmemberlinearLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#666666"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/fpsmembersname"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/beneficiary_list"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fpsmemberuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:text="@string/uid"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fpsbf_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:text="@string/bf1"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="57dp">
+
+                <TextView
+                    android:id="@+id/fpsbf_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="@string/bf2"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="57dp">
+
+                <TextView
+                    android:id="@+id/fpsbf_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="@string/bf3"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sum1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/fpsmemberlinearLayoutTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1">
+
+            <com.omneagate.Util.PullToRefresh.LoadMoreListView
+                android:id="@+id/listView_fps_member_detail"
+                style="@style/scrollbar_shape_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#777777"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutNoRecords"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvNoRecords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_records"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fps_tg_members_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sum1"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="12dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/button_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_marginLeft="10dp">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/grey_background"
+                    android:text="@string/back"
+                    android:textSize="17dp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/best_finger_detection_layout"
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/green_background"
+                android:orientation="horizontal">
+
+                <com.omneagate.Util.SquareLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/green_background">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/finger_icon_tg" />
+                </com.omneagate.Util.SquareLayout>
+
+                <TextView
+                    android:id="@+id/best_finger_detection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/best_finger_detection"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scan_finger_print_layout"
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/green_background"
+                android:orientation="horizontal">
+
+                <com.omneagate.Util.SquareLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/green_background">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/finger_icon_tg" />
+                </com.omneagate.Util.SquareLayout>
+
+                <TextView
+                    android:id="@+id/scan_finger_print"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/scan_finger_print"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/scan_iris_layout"
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/green_background"
+                android:orientation="horizontal">
+
+                <com.omneagate.Util.SquareLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/green_background">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/iris_icon_tg" />
+                </com.omneagate.Util.SquareLayout>
+
+                <TextView
+                    android:id="@+id/scan_iris"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/scan_iris"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/tg_user_bottom_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+

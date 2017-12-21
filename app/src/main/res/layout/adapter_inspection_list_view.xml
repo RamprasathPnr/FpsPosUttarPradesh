@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txt_bill_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_number"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_bill_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/txt_bill_number_label"
+        android:text="5623"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_card_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_bill_number"
+        android:text="@string/card_no"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/txt_card_number_label"
+        android:text="456465"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_commodity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_card_number"
+        android:text="@string/commodity_name"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_commodity_label"
+        android:singleLine="true"
+        android:text="fgdgdf"
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_system_stock_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:singleLine="true"
+        android:text="@string/system_stock"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_system_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_system_stock_label"
+        android:singleLine="true"
+        android:text="2334"
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_physical_stock_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@id/txt_system_stock"
+        android:singleLine="true"
+        android:text="@string/physical_stock"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_physical_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_physical_stock_label"
+        android:singleLine="true"
+        android:text="23435"
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_variance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@id/txt_physical_stock"
+        android:singleLine="true"
+        android:text="@string/variance"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_variance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_commodity_label"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_variance_label"
+        android:singleLine="true"
+        android:text="34556"
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_remarks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_system_stock_label"
+        android:singleLine="true"
+        android:text="@string/remarks"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_remarks"
+        android:layout_width="880dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_system_stock_label"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_remarks_label"
+        android:maxLength="255"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_remarks"
+        android:layout_marginTop="10dp"
+        android:background="#777777"/>
+</RelativeLayout>

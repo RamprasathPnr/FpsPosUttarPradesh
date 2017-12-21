@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_top_layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/topLayout"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_new_inspection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/benecifiarymenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/all_grid_back"
+                    android:padding="2dp">
+
+                    <com.omneagate.Util.SquareLayout
+                        android:id="@+id/rationImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#C8003A">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/inspection_finding_icon" />
+                    </com.omneagate.Util.SquareLayout>
+
+                    <TextView
+                        android:id="@+id/ration_card_based"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/rationImage"
+                        android:gravity="center"
+                        android:text="@string/new_inspection"
+                        android:textColor="#424141"
+                         />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_inspection_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/benecifiaryUpdateMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/all_grid_back"
+                    android:padding="2dp">
+
+                    <com.omneagate.Util.SquareLayout
+                        android:id="@+id/rationUpdateImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#029451">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/inspection_list_icon" />
+                    </com.omneagate.Util.SquareLayout>
+
+                    <TextView
+                        android:id="@+id/ration_card_update_based"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/rationUpdateImage"
+                        android:gravity="center"
+                        android:text="@string/inspection_list"
+                        android:textColor="#424141"
+                         />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:id="@+id/newInspectionMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/all_grid_back"
+                    android:padding="2dp">
+
+                    <com.omneagate.Util.SquareLayout
+                        android:id="@+id/newInspectionMenuImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#029451">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/close_sale_summary" />
+                    </com.omneagate.Util.SquareLayout>
+
+                    <TextView
+                        android:id="@+id/newInspectionMenuTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/newInspectionMenuImage"
+                        android:gravity="center"
+                        android:text="Create New Inspection"
+                        android:textColor="#424141"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:id="@+id/monthlySummaryReportMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/all_grid_back"
+                    android:padding="2dp">
+
+                    <com.omneagate.Util.SquareLayout
+                        android:id="@+id/monthlySummaryReportMenuImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#029451">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/icon_history_sale" />
+                    </com.omneagate.Util.SquareLayout>
+
+                    <TextView
+                        android:id="@+id/monthlySummaryReportMenuTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/monthlySummaryReportMenuImage"
+                        android:gravity="center"
+                        android:textColor="#424141"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

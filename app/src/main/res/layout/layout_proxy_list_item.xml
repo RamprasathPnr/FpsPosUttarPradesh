@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proxyListMasterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/proxyListSubMasterLayout"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/proxyNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text=""
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_below="@id/proxyNameTv"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/aadharNoIv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/small_aadhar_icon_black"/>
+            <TextView
+                android:id="@+id/aadharNoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:singleLine="true"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:textColor="#0288D1" />
+            <ImageView
+                android:id="@+id/dateIv"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/small_calendar_icon_black"/>
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:singleLine="true"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:textColor="#0288D1" />
+            <ImageView
+                android:id="@+id/mobileIv"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/small_mobile_icon_black"/>
+            <TextView
+                android:id="@+id/mobileNoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:singleLine="true"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:textColor="#0288D1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrowIv"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

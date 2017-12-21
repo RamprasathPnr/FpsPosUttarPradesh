@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/alertTitleLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/alertTitleText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text=""
+            android:textStyle="bold"/>
+        <Button
+            android:textAllCaps="false"
+
+            android:id="@+id/okButton"
+            android:layout_below="@id/alertTitleText"
+            android:layout_marginTop="30dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@android:color/holo_red_light"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />-->
+
+    <!--<RelativeLayout
+        android:id="@+id/alertMsgLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/alertMsgText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Stock inward"/>
+
+    </RelativeLayout>-->
+
+    <!--<ListView
+        android:id="@+id/listView1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:divider="#f0f0f0"
+        android:dividerHeight="1dp">
+    </ListView>-->
+
+    <!--<RelativeLayout
+        android:id="@+id/relativeSelect"
+        android:layout_below="@id/alertTitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="3dp">
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:horizontalGap="10dp"
+    android:keyBackground="@color/transparent"
+    android:keyHeight="80dp"
+    android:keyWidth="105dp"
+    android:verticalGap="10dp">
+
+    <Row>
+
+        <Key
+            android:codes="65"
+            android:keyLabel="A" />
+
+        <Key
+            android:codes="66"
+            android:keyLabel="B" />
+
+        <Key
+            android:codes="78"
+            android:keyLabel="N" />
+
+        <Key
+            android:codes="88"
+            android:keyLabel="X" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="87"
+            android:keyLabel="W" />
+
+        <Key
+            android:codes="71"
+            android:keyLabel="G" />
+
+        <Key
+            android:codes="75"
+            android:keyLabel="K" />
+
+        <Key
+            android:codes="89"
+            android:keyLabel="Y" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="8"
+            android:keyIcon="@drawable/icon_backspace"
+            android:keyWidth="220dp" />
+
+        <Key
+            android:codes="46"
+            android:horizontalGap="10dp"
+            android:keyIcon="@drawable/icon_tick"
+            android:keyWidth="220dp" />
+
+        <Key
+            android:codes="99"
+            android:keyHeight="0dp"
+            android:keyLabel=""
+            android:keyWidth="0dp" />
+    </Row>
+
+</Keyboard>
